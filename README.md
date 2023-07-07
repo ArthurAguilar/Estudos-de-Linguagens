@@ -1,0 +1,1 @@
+Pasta para testar a vinculação idle-github e salvar os exercícios das aulas pra recordação :)
