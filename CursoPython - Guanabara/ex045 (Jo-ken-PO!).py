@@ -15,6 +15,9 @@ while repetir == "s":
         [ 1 ] PAPEL
         [ 2 ] TESOURA''')
     opcao = int(input('Qual é a sua jogada? '))
+    while opcao not in [0, 1, 2]:
+        opcao = int(input('Opção inválida, tente novamente! (0, 1 ou 2) '))       
+    
     print("=-" * 18)
     print(f'\nComputador jogou {itens[jogadaPC]}')
     print(f'Jogador jogou {itens[opcao]}')
