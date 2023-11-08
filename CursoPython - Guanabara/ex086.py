@@ -1,3 +1,5 @@
+#Este era um exercicio mais simples. Acabei fazendo o 87 por cima
+
 matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 somaColuna = somaPares = maiorValor = 0
 
