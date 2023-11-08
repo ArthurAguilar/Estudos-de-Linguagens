@@ -1,8 +1,4 @@
-valores = []
-valores.append(5)
-valores.append(9)
-valores.append(4)
+grupo =[['Arthur', 25], ['Amanda', 23], ['Renner', 26], ['Gabi', 31]]
 
-for x, y in enumerate(valores):
-    print(f'Na posição {x+1} encontrei o valor {y}!')
-print('Cheguei ao final da lista.')
+for p in grupo:
+    print(f'{p[0]} tem {p[1]} anos de idade!')
