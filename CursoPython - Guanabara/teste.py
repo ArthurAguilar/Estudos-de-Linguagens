@@ -1,4 +1,11 @@
-grupo =[['Arthur', 25], ['Amanda', 23], ['Renner', 26], ['Gabi', 31]]
+estado = {}
+brasil = []
 
-for p in grupo:
-    print(f'{p[0]} tem {p[1]} anos de idade!')
+for i in range(3):
+    estado['UF'] = str(input('Unidade Federativa: '))
+    estado['Sigla'] = str(input('Sigla: '))
+    brasil.append(estado.copy())
+
+for est in brasil:
+    for k, v in est.items():
+        print(f'{k} = {v}')

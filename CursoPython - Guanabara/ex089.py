@@ -1,9 +1,7 @@
 turma = []
 media = []
-cont = 0
 
 while True:
-    cont += 1
     aluno = []
     aluno.append(str(input('Nome: ')))
     aluno.append(float(input('Nota do 1° semestre: ')))
