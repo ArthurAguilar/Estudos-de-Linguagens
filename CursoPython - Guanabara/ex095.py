@@ -17,8 +17,7 @@ while True:
     if resp != 'S' and resp != 'N':
         resp = str(input('Valor inexistente, tente novamente. [S/N]: '))
     if resp in 'Nn':
-        break
-    
+        break  
 
 print()
 print('*'*40)
