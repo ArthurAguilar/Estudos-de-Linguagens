@@ -1,11 +1,7 @@
-estado = {}
-brasil = []
+print()
+print('*'*40)
+print(f'{"BOLETIM DO ANO":^40}')
+print('*'*40)
+print(f'{"No.":<4}{"NOME":<10}{"GOLS":^10}{"TOTAL":>15}')
+print('-'*40)
 
-for i in range(3):
-    estado['UF'] = str(input('Unidade Federativa: '))
-    estado['Sigla'] = str(input('Sigla: '))
-    brasil.append(estado.copy())
-
-for est in brasil:
-    for k, v in est.items():
-        print(f'{k} = {v}')
