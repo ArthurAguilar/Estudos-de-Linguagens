@@ -13,7 +13,7 @@ def maior():
         if j > maior_numero:
             maior_numero = j
     print(f'\nForam informados {cont} números ao total.')
-    print(f'O maior número informado foi {maior_numero}')
+    print(f'O maior número informado foi {maior_numero}.')
     print('-'*50)
 
 
