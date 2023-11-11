@@ -16,7 +16,7 @@ while True:
     resp = str(input('Deseja continuar? [S/N] ')).upper()
     if resp != 'S' and resp != 'N':
         resp = str(input('Valor inexistente, tente novamente. [S/N]: '))
-    if resp in 'Nn':
+    if resp in 'N':
         break  
 
 print()
@@ -39,6 +39,5 @@ while True:
     else:
         print(f'  ==> Dados do Jogador {time[opcao]["Nome"]}') 
         for i in range(time[opcao]["Partidas"]):
-            print(f'      No jogo {i+1} {time[opcao]["Nome"]} fez {time[opcao]["Gols"][i]} gols.')
-
+            print(f'      No jogo {i+1} {time[opcao]["Nome"]} fez {time[opcao]["Gols"][i]} gol(s).')
 print(f'{"<<Finalizando>>":^30}')
