@@ -1,8 +1,10 @@
-def teste(num):
-    if num % 2 == 0:
-        return True
-    else:
-        return False
-    
-n = int(input('Digite um número: '))
-print(teste(n))
+def fatorial(n):
+    f = 1
+    for c in range(n, 0, -1):
+        f *= c
+    return f
+
+
+num = int(input('Digite um valor: '))
+fat = fatorial(num)
+print(f'O fatorial de {num} é {fat}.')
