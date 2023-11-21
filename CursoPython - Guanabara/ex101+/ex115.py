@@ -6,16 +6,12 @@ while True:
                'Sair do Sistema'])
 
     if option == 1:
-        linha()
-        print(f'[bold blue]PESSOAS CADASTRADAS'.center(50))
-        linha()
+        title(f'[bold blue]PESSOAS CADASTRADAS'.center(50))
         print()
         linha()
         sleep(2)
     elif option == 2:
-        linha()
-        print(f'[bold blue]CADASTRO'.center(50))
-        linha()
+        title((f'[bold blue]CADASTRO'.center(50)))
         print()
         linha()
         sleep(2)
@@ -28,4 +24,3 @@ while True:
         break             
     else:
         print(f'[red]Valor inválido, tente entre do número 1 ao 3!')
-
