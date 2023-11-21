@@ -38,13 +38,13 @@ def moeda(preco = 0, moeda = 'R$'):
     return f'{moeda}{preco:.2f}'.replace('.', ',')
 
 
-def resumo(preco, aumento = 0, diminuicao = 0):
+def resumo(n, aumento = 0, diminuicao = 0):
     linha40()
     print(f'{"RESUMO DO VALOR":^40}')
     linha40()    
-    print(f'Preço analisado: \t\t{moeda(preco)}')
-    print(f'Dobro do preço: \t\t{moeda(dobro(preco))}')
-    print(f'Metade do preço: \t\t{moeda(metade(preco))}')
-    print(f'{aumento}% de aumento: \t\t{moeda(aumentar(preco, 20))}')
-    print(f'{diminuicao}% de redução: \t\t{moeda(diminuir(preco, 12))}')
+    print(f'Preço analisado: \t\t{moeda(n)}')
+    print(f'Dobro do preço: \t\t{moeda(dobro(n))}')
+    print(f'Metade do preço: \t\t{moeda(metade(n))}')
+    print(f'{aumento}% de aumento: \t\t{moeda(aumentar(n, aumento))}')
+    print(f'{diminuicao}% de redução: \t\t{moeda(diminuir(n, diminuicao))}')
     linha40()

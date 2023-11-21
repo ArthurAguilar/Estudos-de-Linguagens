@@ -1,5 +1,4 @@
-import moedas
-
+from uteis import moedas
 preco = float(input('Digite o valor: R$'))
 
 print(f'Aumentando {moedas.moeda(preco)} em 10%, fica {moedas.aumentar(preco, 10, format)}')

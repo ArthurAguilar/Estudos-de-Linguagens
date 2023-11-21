@@ -1,4 +1,4 @@
-import moedas
+from uteis.moedas import *
 
 preco = float(input('Digite o valor: R$'))
 
