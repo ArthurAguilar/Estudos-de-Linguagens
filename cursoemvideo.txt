@@ -1,0 +1,6 @@
+Arthur                                25
+Amanda                                23
+Renner                                26
+Gabi                                  31
+Sofhia                                18
+Arthur+Amanda                          3
