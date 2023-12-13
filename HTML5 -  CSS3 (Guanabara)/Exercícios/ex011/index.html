@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Uso de imagens em diferentes tipos de dispositivos!</h1>
+    <p>Acesse através de diferentes dispositivos (PC, celular, TV Smart) e veja a diferença</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem G">
+    </picture>
+
+    <h1>Adicionado Áudios na Página</h1>
+    
+    <audio preload="metadata" controls>
+        <source src="midia/The Other Promise.mp3" type="audio/mpeg">
+        <source src="midia/The Other Promise.ogg" type="audio/ogg">
+        <source src="midia/The Other Promise.wav" type="audio/wav">
+        <p>Não foi possível carregar o áudio <a href="midia/The Other Promise.mp3" download="The Other Promise.mp3" type="audio/mpeg"></a></p>
+    </audio>
+
+    <p>Faça o download clicando <a href="midia/The Other Promise.mp3" download="TheOtherPromise.mp3" type="audio/mpeg">aqui</a> em caso de erro.</p>    
+</body>
+</html>
