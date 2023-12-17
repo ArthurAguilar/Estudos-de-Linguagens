@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links-PseudoElements</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            background-color: rgba(169, 169, 169, 0.565);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: blueviolet;
+        }
+
+        a:visited{
+            color: darkred
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+    a::before {
+            content: '☞ '
+        }
+
+    a::after{
+        content: ' ☜'
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Testando Links com Pseudo-Classes e Elementos</h1>
+    
+    <ul>
+        <li><a href="https://www.linkedin.com/in/arthuraguilar/" target="_blank">Linkedin</a></li>
+        <li><a href="https://www.instagram.com/tuuzao" target="_blank">Instagram</a></li>
+        <li><a href="https://github.com/ArthurAguilar" target="_blank">Github</a></li>
+    </ul>    
+    
+</body>
+</html>
