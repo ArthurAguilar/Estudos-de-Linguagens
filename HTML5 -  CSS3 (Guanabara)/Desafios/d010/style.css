@@ -4,6 +4,8 @@
     font-size: 2em;
 }
 
+
+
 body {
     background-color: #84E1AD;
 }
@@ -23,9 +25,7 @@ a:hover {
     margin-left: -20px;
 }
 
-.imgs {
-    text-align: center;
-}
+
 
 header {
     text-align: center;
@@ -88,6 +88,11 @@ main {
         width: 800px;
         margin: auto;
         padding: 10px;
+    }
+
+    .img {
+        text-align: center;
+        width: 100%;
     }
 }
 
