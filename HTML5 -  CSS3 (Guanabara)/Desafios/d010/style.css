@@ -4,6 +4,7 @@ body {
     background-color: #84E1AD;
 }
 
+<<<<<<< HEAD
 p {
     text-indent: 30px;
     font-size: 1.2em;
@@ -26,21 +27,37 @@ a:hover {
 }
 
 
+=======
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
 .imgs {
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+p {
+    text-indent: 30px;
+}
+
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
 header {
     background: linear-gradient(#34BB71, #1D663D);
     color: white;
     margin: -22px -10px 0px -15px;
+<<<<<<< HEAD
     padding: 1px;
 
     h1, p {
+=======
+    padding: 10px;
+
+    h1, p{
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
         text-align: center;
     }
 }
 
+<<<<<<< HEAD
 nav li {
     display: inline-flex;
     margin-right: 10px;
@@ -55,33 +72,64 @@ nav li {
     a:hover {
         color: red;
     }
+=======
+nav {
+   list-style: none;
+   li > a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        margin-bottom: -20px;
+   }
+   a:hover{
+    color: red;
+   }
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
 }
 
 main {
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+<<<<<<< HEAD
     width: 50%;
     margin: auto;
     padding: 10px;
 
     h3 {
         background: linear-gradient(to right, #25644282, #E7F6EE);
+=======
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    h3 {
+        background: linear-gradient(to right, #25644282,#E7F6EE);
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
         padding: 2px;
     }
 }
 
+<<<<<<< HEAD
 .youtubeVideo {
     text-align: center;
     background-color: #1A5C38;
     padding: 15px;
     margin: -10px;
+=======
+.youtubeVideo{
+    text-align: center;
+    background-color: #1A5C38;
+    padding: 25px 0px;
+    margin: 0px -10px;
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
 }
 
 .extra {
     background-color: #C5EBD6;
     border-radius: 10px;
     padding: 8px;
+<<<<<<< HEAD
     margin: 20px;
 
     h3 {
@@ -90,11 +138,19 @@ main {
         font-size: 1.5em;
         margin: -8px;
         padding: 10px;
+=======
+    margin: 10px;
+    h3 {
+        color: white;
+        background: linear-gradient(#B7E1CA, #2FA866);
+        margin: -8px; 
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
     }
 }
 
+<<<<<<< HEAD
 .lista1,
 .lista2 {
     float: left;
@@ -112,9 +168,36 @@ main {
 }
 
 footer {
+=======
+.listas {
+    overflow: auto;
+  }
+
+  li:before {
+    content: '\2713'; 
+    margin-right: 5px; 
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+  }
+  .lista1, .lista2 {
+    float: left;
+    list-style: none;
+    width: 45%; 
+    padding: 0px 0px 0px 20px
+
+
+}  
+
+footer{
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
     color: white;
     text-align: center;
     background-color: #1A5C38;
     padding: 1px;
     margin: 50px -10px -50px -10px;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 1e3b510ceb5e47d2bf57163e3db51555245b39b3
