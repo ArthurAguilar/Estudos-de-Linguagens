@@ -1,6 +1,6 @@
 # Repositório de Estudos - Python (Professor Guanabara)
 
-Bem-vindo ao meu repositório de estudos em Python, sob a orientação do Professor Guanabara! Aqui, você encontrará o resultado do meu aprendizado desde o básico até o nível intermediário em programação Python.
+Bem-vindos ao meu repositório de estudos em Python, sob a orientação do Professor Guanabara! Aqui, você encontrará o resultado do meu aprendizado desde o básico até o nível intermediário em programação Python.
 
 ## Sobre o Repositório
 
