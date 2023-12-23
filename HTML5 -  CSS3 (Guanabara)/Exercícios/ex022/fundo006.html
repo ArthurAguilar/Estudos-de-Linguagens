@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br           ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        .container{
+            position: relative;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: rgba(42, 165, 48, 0.611);
+            height: 600px;
+        }
+
+        .box{
+            position: absolute;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: rgba(178, 17, 146, 0.462);
+            height: 250px;
+            width: 350px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%); 
+        }
+
+        .joia{
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.417);
+            width: 50px;
+            height: 50px;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="box">     
+               <div class="joia"></div>
+        </section>
+
+    </div>
+</body>
+</html>
