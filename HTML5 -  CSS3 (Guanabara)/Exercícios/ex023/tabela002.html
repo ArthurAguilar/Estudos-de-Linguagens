@@ -11,7 +11,12 @@
         }
 
         body {
-            background-color: gray;
+            background-color: rgb(117, 154, 168);
+            text-align: center;
+        }
+
+        caption {
+            font-size: 17.5px;
         }
 
         header {
@@ -34,33 +39,45 @@
             height: 1000px;
             margin: auto;
             margin-top: 40px;  
-            margin-bottom: 40px;         
+            margin-bottom: 40px;
+            position: relative;         
         }
 
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+        tbody > tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+    
         th, td {
             border: 1px solid black;
-            padding: 5px;
-            
+            padding: 5px;            
         }
 
+        .pop {
+            width: 100px;
+        }
         .head, .foot {
-            background-color: lightgray;
+            background-color: rgb(145, 145, 145);
         }
 
         .num {
             text-align: right;
         }
 
-        p {
-            background-color: white;
+        footer > p {
+            background-color: black;
+            color: white;
             text-align: center;
             padding: 10px;
             font-size: 18px;
-
+            margin-bottom: 40px;
         }
-       
-        
-    
+
+
+
     </style>
 </head>
 <body>
@@ -69,10 +86,11 @@
     </header>
 
     <table>
+       <caption><strong>População por Unidade Federativa</strong></caption>
         <thead class="head">
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" class="pop">População</th>
             </tr>
         </thead>
         <tbody>
@@ -86,7 +104,7 @@
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td class="num">16.054.524</td>
+                <td class="num">16.054.524</td>                
             </tr>
             <tr>
                 <td>Bahia</td>
@@ -185,13 +203,22 @@
             </tr>
         </tbody>
         <tfoot class="foot">
-            <td><strong>População Total</strong></td>
+            <th scope="row">População Total</th>
             <td class="num"><strong>193.081.679</strong></td>
         </tfoot>
     </table>
 
-    <p>
-        <strong>Observação:</strong> Quando fiz a soma estava com bastante sono hahahh
-    </p>
+    <footer>
+        <p>
+            <strong>Observação:</strong> Quando fiz a soma estava com bastante sono hahahh
+        </p>
+    </footer>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quod tempore facilis at pariatur dolor illum temporibus natus eius et. Delectus quod, eius dignissimos id quos ab ipsam obcaecati distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id nostrum velit repellendus. Dolor non dicta veritatis, tempora magnam, maiores eaque explicabo, libero molestiae ex doloremque iusto placeat voluptates doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque minima esse corrupti vero. Ullam repellat nam beatae ea? Facere nisi cupiditate nobis veniam qui quos possimus eos, quaerat odit! </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quod tempore facilis at pariatur dolor illum temporibus natus eius et. Delectus quod, eius dignissimos id quos ab ipsam obcaecati distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id nostrum velit repellendus. Dolor non dicta veritatis, tempora magnam, maiores eaque explicabo, libero molestiae ex doloremque iusto placeat voluptates doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque minima esse corrupti vero. Ullam repellat nam beatae ea? Facere nisi cupiditate nobis veniam qui quos possimus eos, quaerat odit! </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quod tempore facilis at pariatur dolor illum temporibus natus eius et. Delectus quod, eius dignissimos id quos ab ipsam obcaecati distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id nostrum velit repellendus. Dolor non dicta veritatis, tempora magnam, maiores eaque explicabo, libero molestiae ex doloremque iusto placeat voluptates doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque minima esse corrupti vero. Ullam repellat nam beatae ea? Facere nisi cupiditate nobis veniam qui quos possimus eos, quaerat odit! </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quod tempore facilis at pariatur dolor illum temporibus natus eius et. Delectus quod, eius dignissimos id quos ab ipsam obcaecati distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id nostrum velit repellendus. Dolor non dicta veritatis, tempora magnam, maiores eaque explicabo, libero molestiae ex doloremque iusto placeat voluptates doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque minima esse corrupti vero. Ullam repellat nam beatae ea? Facere nisi cupiditate nobis veniam qui quos possimus eos, quaerat odit! </p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quod tempore facilis at pariatur dolor illum temporibus natus eius et. Delectus quod, eius dignissimos id quos ab ipsam obcaecati distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum id nostrum velit repellendus. Dolor non dicta veritatis, tempora magnam, maiores eaque explicabo, libero molestiae ex doloremque iusto placeat voluptates doloribus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est itaque minima esse corrupti vero. Ullam repellat nam beatae ea? Facere nisi cupiditate nobis veniam qui quos possimus eos, quaerat odit! </p>
+    
 </body>
 </html>
