@@ -16,11 +16,12 @@ body img {
 
 img {
     width: 100vw;
+    margin-bottom: 5px;
 }
 
 a {
     display: block;
-    background-color: black;
+    background-color: darkred;
     color: white;
     padding: 20px;
     text-decoration: none;
