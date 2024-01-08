@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Formulários com Senhas</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iuser">Usuário: </label>
+            <input type="text" name="user" id="iuser" placeholder="User" autocomplete="username" minlength="5" maxlength="15" size="15" required>
+        </p>
+        <p>
+            <label for="ipassword">Senha: </label>
+            <input type="password" name="password" id="ipassword" placeholder="Password" autocomplete="current-password" minlength="8" maxlength="20" size= "15" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
