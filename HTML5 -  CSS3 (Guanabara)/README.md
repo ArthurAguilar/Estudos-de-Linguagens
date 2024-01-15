@@ -1,4 +1,4 @@
-# Curso de HTML5 e CSS3 - Professor Guanabra
+# Curso de HTML5 e CSS3 - Professor Guanabara
 
 Bem-vindos ao repositório do curso de HTML5 e CSS3 ministrado pelo Professor Guanabra! Este é o espaço onde armazeno meus exercícios, desafios e projetos enquanto aprendo desde o básico até o avançado dessas tecnologias fundamentais para o desenvolvimento web.
 
