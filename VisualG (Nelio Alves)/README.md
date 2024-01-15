@@ -1,4 +1,4 @@
-# Repositório de Estudos - VisualG
+# Repositório de Estudos - Portugol VisualG (Professor Nélio Alves)
 
 Bem-vindos ao meu repositório de estudos em VisualG, sob a orientação do Professor Nélio Alves. Este é o local onde eu iniciei minha jornada de aprendizado em programação, explorando os fundamentos da lógica de programação através do uso do Portugol.
 
