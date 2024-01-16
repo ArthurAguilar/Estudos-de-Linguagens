@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
    <header>
         <h1>Meu Site Responsivo</h1>
         <span id="idMenu" class="material-symbols-outlined" onclick="funcaoMenu()">menu</span>
@@ -31,6 +31,14 @@
     </main> 
 
     <script>
+        function mudouTamanho () {
+            if (window.innerWidth >=768) {
+                iMenu.style.display = 'block'
+            } else {
+                iMenu.style.display = 'none'
+            }
+        }
+
         function funcaoMenu () {
             if (iMenu.style.display == 'block') {
                 iMenu.style.display = 'none';
@@ -40,10 +48,5 @@
         }
     </script>
 
-    <!-- <script>
-        function funcaoMenu () {
-            iMenu.style.display = 'block'
-        }
-    </script> -->
 </body>
 </html>

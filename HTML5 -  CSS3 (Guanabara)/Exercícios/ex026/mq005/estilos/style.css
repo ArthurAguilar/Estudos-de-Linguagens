@@ -94,8 +94,8 @@ main p {
     }
 
     menu a {
-        border: none;
-        border: 1px solid white;
+        border: 1px solid rgba(255, 255, 255, 0.403);
+        margin-left: 10px;
     }
 
     menu li {
