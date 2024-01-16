@@ -1,0 +1,29 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    background: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* CONFIGURAÇÕES EM MODO RETRATO - PORTRAIT */
+
+@media screen and (orientation: portrait) {
+    body {
+        background-image: url(../imagens/cev-portrait.jpg);
+        background-position: center bottom;
+    }
+}
+
+/* CONFIGURAÇÕES EM MODO PAISAGEM - LANDSCAPE */
+
+@media screen and (orientation: landscape) {
+    body {
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position: bottom left;
+    }
+}
