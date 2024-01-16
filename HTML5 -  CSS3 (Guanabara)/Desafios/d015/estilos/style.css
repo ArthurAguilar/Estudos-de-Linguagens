@@ -14,7 +14,7 @@ body {
 section.container {
     position: absolute;
     width: 250px;
-    height: 530px;
+    height: 520px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -44,7 +44,7 @@ section.container {
 
 .login>p {
     font-size: .9rem;
-    margin: 15px 0;
+    margin: 12px 0;
 }
 
 .camposInput {
