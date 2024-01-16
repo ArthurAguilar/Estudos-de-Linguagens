@@ -18,6 +18,7 @@ header h1 {
     text-align: center;
     color: white;
     padding: 15px;
+    margin: 25px;
 }
 
 menu {
@@ -42,6 +43,10 @@ menu a {
 menu a:hover {
     background-color: #4D6378;
     cursor: pointer;    
+}
+
+menu li:last-child {
+    border-bottom: 2px solid black;
 }
 
 main {
@@ -77,5 +82,32 @@ main p {
 #idMenu:hover {
     background-color: #5F90AE;
     color: black
+}
+
+@media screen and (min-width: 768px) {
+    #idMenu {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu a {
+        border: none;
+        border: 1px solid white;
+    }
+
+    menu li {
+        display: inline-block;
+    }
+
+    menu li:last-child {
+        border: none;
+    }
+    
+    main {
+        width: 60vw;
+    }
 }
 
