@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+   <header>
+        <h1>Meu Site Responsivo</h1>
+        <span id="idMenu" class="material-symbols-outlined" onclick="funcaoMenu()">menu</span>
+        <menu id="iMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Esportes</a></li>
+                <li><a href="#">Culinária</a></li>
+                <li><a href="#">Política</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Bem-vindo ao meu site!</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate nesciunt tempore eligendi qui hic expedita, voluptatem a debitis numquam sed ipsam cum iste ea, laborum delectus odio dolore. Sint, incidunt?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia voluptates repellat laborum id quibusdam! Molestias asperiores quidem quibusdam dignissimos odio ratione dolorum voluptas alias qui quos, delectus ab consequatur labore.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio laborum, libero quas facere reprehenderit dolore nostrum nobis repudiandae magnam sequi, odit labore laboriosam a? Dolores nihil repellendus et veniam quia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut accusantium esse at quisquam doloribus perferendis laudantium possimus dolore, libero ab dicta, quas ullam praesentium, rem tenetur? Vel fugiat iure sunt?</p>
+        </article>
+    </main> 
+
+    <script>
+        function funcaoMenu () {
+            if (iMenu.style.display === 'block') {
+                iMenu.style.display = 'none';
+            } else {
+                iMenu.style.display = 'block'
+            }
+        }
+    </script>
+
+    <!-- <script>
+        function funcaoMenu () {
+            iMenu.style.display = 'block'
+        }
+    </script> -->
+</body>
+</html>
