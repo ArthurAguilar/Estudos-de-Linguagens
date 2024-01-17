@@ -1,12 +1,7 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 768px) {
-    body {
-    background-color: #5F2C82;
-}
-}
-
 @media screen and (min-width: 768px) { 
+
     body {
         height: 100vh;
         background: linear-gradient(to top, #49a09d, #5F2C82)
@@ -21,7 +16,7 @@
 
     .imagem {
         height: 100%;
-        width: 30%;
+        width: 40%;
     }
 
     .login {
@@ -30,7 +25,7 @@
     }
 
     .camposInput>input {
-        transform: translate(22px, -4px);
+        transform: translate(18px, -4px);
     }
 }
 
@@ -63,7 +58,7 @@
     }
 
     .camposInput>input {
-        transform: translate(11px, -4px);
+        transform: translate(8px, -4px);
     }
 
     form>input[type='submit'] {
