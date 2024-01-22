@@ -20,14 +20,13 @@
         somarBtn.addEventListener('click', somar)
 
         function somar() {
-            resultado = document.getElementById('resultado')
+            let resultado = document.getElementById('resultado')
             let n1 = Number(document.getElementById('txt1').value) 
             let n2 = Number(document.getElementById('txt2').value)
             let soma = n1 + n2
 
-            resultado.innerHTML = `A soma entre ${n1} e ${n2} é ${soma}.`
+            resultado.innerHTML = `A soma entre ${n1} + ${n2} é ${soma}.`
         }
-
     </script>
 
 
