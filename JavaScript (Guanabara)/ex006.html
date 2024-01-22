@@ -25,16 +25,28 @@
     </style>
 </head>
 <body>
-    <div id="bloco" onclick="clicou()">
+    <div id="bloco">
         <p>Interaja</p>
     </div>
 
     <script>
+        let area = document.getElementById('bloco')
+        area.addEventListener('click', clicou)
+        area.addEventListener('mouseenter', entrou)
+        area. addEventListener('mouseout', saiu)
+
         function clicou() {
-            let area = document.getElementById('bloco')
             area.innerText = 'Clicou!'
             area.style.background = 'red';
-            area.style.color = 'white'
+        }
+
+        function entrou() {
+            area.innerText = 'Entrou'
+        }
+
+        function saiu() {
+            area.innerText = 'Saiu';
+            area.style.background = 'white';
         }
     </script>
 </body>
