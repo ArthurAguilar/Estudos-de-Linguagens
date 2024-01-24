@@ -15,9 +15,7 @@ function horaAtual() {
     } else {
         document.body.style.background = '#212a27'
         document.querySelector('#titulo').style.color ='white'
-        document.querySelector('footer').style.color = 'white'
-
-       
+        document.querySelector('footer').style.color = 'white'       
         img.src = 'foto-noite.png'
     }
 }
