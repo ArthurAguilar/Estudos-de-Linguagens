@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
  }
 
 body {
@@ -17,8 +18,8 @@ body {
 }
 
 header {
-    font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
     margin-bottom: 30px;
 }
 
@@ -30,7 +31,17 @@ article {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.523);    
 }
 
+footer {
+    font-size: 1.1rem;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 img {
     width: 250px;
-    padding: 20px;
+    padding: 30px 0 10px 0;
 }
