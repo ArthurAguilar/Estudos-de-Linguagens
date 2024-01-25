@@ -1,37 +1,61 @@
 let valores = []
 let num = document.querySelector('#inputNumber')
+let valorAtual = Number(num.value)
 let result = document.querySelector('#result')
+let select = document.querySelector('#selectAnalisar')
+let total = 0
+
 
 function adicionarValor() {
-    let num = document.querySelector('#inputNumber')
+    let valorAtual = Number(num.value)
 
-    if (Number(num.value) == 0) {
-        alert('Adicione um valor')
-    } else if (Number(num.value) < 0 || Number(num.value) > 100) {
-        alert('Adicione um valor de 0 a 100!')
+    if (valores.length == 0) {
+        select.innerHTML = ''
+    }  
+
+    if (valorAtual < 0 || valorAtual > 100) {
+        alert('Tente novamente com um número entre 0 e 100.')
+    } else if (valorAtual === 0) {
+        alert('Adicione um valor!')
     } else {
-        valores.push(Number(num.value))
-        let list = document.querySelector('#selectAnalisar') 
-        let valor = document.createElement('option')
-        valor.text = `Valor ${Number(num.value)} adicionado.`
-        list.append(valor)
+        if (valores.indexOf(valorAtual) === -1) {
+            valores.push(valorAtual)
+            total += valorAtual
 
-        num.value =''
-        num.focus()
-
-
+            let opt = document.createElement('option')
+            opt.text = `Valor ${valorAtual} adicionado`
+            select.append(opt)
+        } else {
+            alert('Número já adicionado!')
+        }
     }
+    num.value = '' 
+    num.focus()
 }
 
+
 function analisarValor() {
+    let media = total / valores.length 
+    let maior = valores[0]
+    let menor = valores[0]
+
+    for (c in valores) {
+        if (valores[c] > maior) {
+            maior = valores[c]
+        }
+        if (valores[c] < menor) {
+            menor = valores[c]
+        }
+    }
+
     if (valores.length == 0) {
         alert('Primeiro adicione um valor')
     } else {   
-        result.innerHTML = `Você adicionou os valores ${valores}.`
-        result.innerHTML = `Ao todo são {} números digitados`
-        result.innerHTML = `A soma de todos os números é {}`
-        result.innerHTML = `A média de todos os números é {}`
-        result.innerHTML = `O maior número é o {}`
-        result.innerHTML = `O menor número é o {}`
+        result.innerHTML = `Você adicionou os valores ${valores}. <br>`
+        result.innerHTML += `Ao todo foram ${valores.length} números digitados. <br>`
+        result.innerHTML += `A soma de todos os números é ${total}. <br>`
+        result.innerHTML += `A média de todos os números é ${media.toFixed(2)}. <br>`
+        result.innerHTML += `O menor número é o ${menor}. <br>`
+        result.innerHTML += `O maior número é o ${maior}. <br>`
     }
 } 
