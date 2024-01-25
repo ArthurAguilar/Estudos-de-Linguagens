@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisando Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Analisando Números</h1>
+    </header>
+
+    <section>
+        <div>
+            <label for="num">Número (1-100): </label>
+            <input type="number" name="num" id="inputNumber">
+            <input type="button" value="Adicionar" id="btn-Add" onclick="adicionarValor()">
+        </div>
+        <div>
+            <select name="analisar" id="selectAnalisar" size="10"></select> <br>
+            <input type="button" value="Analisar" id="btn-Analisar" onclick="analisarValor()">
+            <div id="result"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Criado por <a href="https://www.linkedin.com/in/arthuraguilar/">Arthur Aguilar</a>, exercício do <a href="https://www.cursoemvideo.com">CursoEmVideo.</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
