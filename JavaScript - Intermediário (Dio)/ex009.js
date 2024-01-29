@@ -1,13 +1,3 @@
-/* 
-    1. Crie uma classe para representar pessoas.
-    Para cada pessoa teremos os atributos
-        Nome, 
-        peso e
-        altura
-    As pessoas devem ter a capacidade de dizer o valor do seu IMC (peso / altura²);
-    Instancie uma pessoa chamada José que tenha 70kg e 1,75 de altura e peça ao José para dizer o valor do seu IMC;
-*/
-
 class Pessoa {
     nome;
     peso;
@@ -35,6 +25,12 @@ class Pessoa {
     }
 }
 
-let x = new Pessoa('José', 75, 1.80)
+const turma = []
 
-console.log(x.calcularImc())
+turma.push(new Pessoa('José', 75, 1.80))
+turma.push(new Pessoa('Arthur', 80, 1.90))
+turma.push(new Pessoa('Amanda', 67, 1.60))
+
+let eu = turma.find(pessoa => pessoa.nome === 'Arthur').calcularImc()
+console.log(turma.find(pessoa => pessoa.nome === 'Arthur').calcularImc());
+console.log(turma.find(pessoa => pessoa.nome ==='Amanda').calcularImc())

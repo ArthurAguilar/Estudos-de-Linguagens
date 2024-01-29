@@ -1,15 +1,14 @@
-class Pessoa {
-    nome;
-    idade;
+notas = []
+let soma = 0
 
-    constructor(nome, idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
+notas.push(7)
+notas.push(6)
+notas.push(9)
 
-    descrever() {
-        console.log(`Nome: ${this.nome}; Idade: ${this.idade};`);
-    }
+
+for (i = 0; i < notas.length; i++) {
+    soma += notas[i]
 }
 
-new Pessoa('Renan', 30).descrever();
+let media = soma / notas.length
+console.log(media.toFixed(1))
