@@ -8,7 +8,7 @@ function conversorHTML(pokemon) {
                 
                 <div class="details">
                     <ol class="types">
-                        ${pokemon.types.map((typeSlot) => `<li class="type ${pokemon.types[0].type.name}">${typeSlot.type.name}</li>`).join('')}
+                        ${pokemon.types.map((typeSlot) => `<li class="type ${typeSlot.type.name}">${typeSlot.type.name}</li>`).join('')}
                     </ol>
 
                     <img class="pokemon-img" src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}">
