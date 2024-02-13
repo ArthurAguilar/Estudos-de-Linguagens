@@ -105,3 +105,25 @@
 // array = [1, 2, 3, 4, 5]
 // const newArray = array.map((el) =>  el * 2)
 // console.log(newArray)
+
+// class Pessoa {
+//     constructor (nome, idade) {
+//         this.nome = nome
+//         this.idade = idade
+//     }
+
+//     setNome(nome) {
+//         this.nome = nome
+//     }
+
+//     setIdade(idade) {
+//         this.idade = idade
+//     }
+// }
+
+// const x = new Pessoa('Arthur', 25)
+
+// console.log(x)
+// x.setNome('Amanda')
+// x.setIdade(23)
+// console.log(x)
