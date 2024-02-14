@@ -3,6 +3,7 @@ portasInput = document.querySelector('#f_portas')
 blindagemInput = document.querySelector('#f_blindagem')
 municaoInput = document.querySelector('#f_municao')
 addBtn = document.querySelector('#btn_addCarro')
+removerBtn = document.querySelectorAll('.btnRemover')
 radioMilitar = document.querySelector('#f_tipoMilitar')
 radioNormal = document.querySelector('#f_tipoNormal')
 divCarros = document.querySelector('.carros')
@@ -46,6 +47,12 @@ radioNormal.addEventListener('click', () => {
 function addCar() {
     let div = document.createElement('div')
     div.classList.add('carro')
+    let btnRemover = document.createElement('button')
+    btnRemover.addEventListener('click', () => {
+        const divPai = btnRemover.parentNode
+        divPai.remove()
+    })
+    
     let novoCarro;
 
     if (radioMilitar.checked) {
@@ -59,7 +66,9 @@ function addCar() {
         div.innerHTML += `Portas: ${novoCarro.porta} <br>`;
         div.innerHTML += `Blindagem: ${novoCarro.blindagem}% <br>`;
         div.innerHTML += `Munição: ${novoCarro.municao}`;
-
+        
+        btnRemover.textContent = 'Remover'
+        div.appendChild(btnRemover)
         divCarros.appendChild(div)
     } else {
         novoCarro = new Carro(
@@ -69,12 +78,18 @@ function addCar() {
         div.innerHTML = `Nome: ${novoCarro.nome} <br>`;
         div.innerHTML += `Portas: ${novoCarro.porta} <br>`;
 
+        btnRemover.textContent = 'Remover'
+        div.appendChild(btnRemover)
         divCarros.appendChild(div) 
    }
 }
 
 addBtn.addEventListener('click', () => {
     addCar()
+    nomeInput.focus()
+    nomeInput.value = ''
+    portasInput.value = 0
+    blindagemInput.value = 0
+    municaoInput.value = 0
+
 })
-
-
