@@ -153,7 +153,7 @@
 
 
 const array = ['Arthur', 'Amanda', 'Renner']
+const lastChar = array.length -1
 
-const lastChar = array.length
+console.log(array[lastChar])
 
-console.log(lastChar)
