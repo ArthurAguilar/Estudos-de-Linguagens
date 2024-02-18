@@ -151,9 +151,7 @@
 // npc2.info()
 // npc3.info()
 
-
 const array = ['Arthur', 'Amanda', 'Renner']
 const lastChar = array.length -1
 
 console.log(array[lastChar])
-
