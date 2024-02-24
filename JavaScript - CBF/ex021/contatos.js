@@ -1,3 +1,5 @@
+//Refazendo o exercício para macetar na cabeça (lá ele!)
+
 import { agenda } from "./bancoContatos.js"
 
 let contatos = {

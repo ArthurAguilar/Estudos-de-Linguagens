@@ -1,3 +1,5 @@
+//Refazendo o exercício para macetar na cabeça (lá ele!)
+
 import contatos from "./contatos.js"
 
 const btnGravar = document.querySelector('#btn_gravar')
@@ -14,4 +16,9 @@ btnGravar.addEventListener('click', () => {
     }
 
     contatos.addContato(novoContato, listaContatos)
+    
+    inputNome.value = ''
+    inputTel.value = ''
+    inputEmail.value = ''
+    inputNome.focus()
 })
