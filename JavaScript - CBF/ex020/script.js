@@ -3,10 +3,12 @@
 import contatos from "./contatos.js"
 
 const btnGravar = document.querySelector('#btn_gravar')
+
 const inputNome = document.querySelector('#f_nome')
 const inputTel = document.querySelector('#f_telefone')
 const inputEmail = document.querySelector('#f_email')
 const listaContatos = document.querySelector('#listaContatos')
+
 
 btnGravar.addEventListener('click', () => {
     const novoContato = {
@@ -15,7 +17,7 @@ btnGravar.addEventListener('click', () => {
         email: inputEmail.value,
     }
 
-    contatos.addContato(novoContato, listaContatos)
+    contatos.addContato(novoContato, listaContatos);
     
     inputNome.value = ''
     inputTel.value = ''

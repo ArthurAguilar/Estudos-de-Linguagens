@@ -26,9 +26,19 @@ let contatos = {
             const pEmail = document.createElement('p')
             pEmail.innerHTML = contato.email
 
+            const btnDelete = document.createElement('button')
+            btnDelete.textContent = 'DEL'
+            btnDelete.classList.add('btnDelete')
+
+            btnDelete.addEventListener('click', () => {
+                const divPai = btnDelete.parentNode
+                divPai.remove()
+            })
+            
             div.appendChild(pNome)
             div.appendChild(pTel)
             div.appendChild(pEmail)
+            div.appendChild(btnDelete)
             destinoDOM.appendChild(div)
         })
     }
