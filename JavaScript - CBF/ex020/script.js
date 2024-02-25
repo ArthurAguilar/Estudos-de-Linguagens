@@ -1,20 +1,24 @@
-import c from './contatos.js'
-const listaContatos = document.getElementById('listaContatos')
-const btn_gravar = document.getElementById('btn_gravar')
-const nome = document.querySelector('#f_nome')
-const tel = document.querySelector('#f_telefone')
-const email = document.querySelector('#f_email')
+//Refazendo o exercício para macetar na cabeça (lá ele!)
 
-btn_gravar.addEventListener('click', () => {
-    const cont = {
-        nome: nome.value,
-        tel: tel.value,
-        email: email.value,
+import contatos from "./contatos.js"
+
+const btnGravar = document.querySelector('#btn_gravar')
+const inputNome = document.querySelector('#f_nome')
+const inputTel = document.querySelector('#f_telefone')
+const inputEmail = document.querySelector('#f_email')
+const listaContatos = document.querySelector('#listaContatos')
+
+btnGravar.addEventListener('click', () => {
+    const novoContato = {
+        nome: inputNome.value,
+        tel: inputTel.value,
+        email: inputEmail.value,
     }
-    c.addContato(cont, listaContatos)
 
-    nome.value = ''
-    tel.value = ''
-    email.value = ''
-    nome.focus()
+    contatos.addContato(novoContato, listaContatos)
+    
+    inputNome.value = ''
+    inputTel.value = ''
+    inputEmail.value = ''
+    inputNome.focus()
 })

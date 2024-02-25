@@ -1,25 +1,37 @@
-import { contatos } from './bancoContatos.js'
+import { agenda } from "./bancoContatos.js"
 
-let contato = {
-    addContato: (novoContato, destinoDOM) => {
-        const div = document.createElement('div')
-        div.classList.add('contato')
+let contatos = {
+    addContato: (dados, destinoDOM) => {
+        
+        const novoContato = {
+            nome: dados.nome,
+            tel: dados.tel,
+            email: dados.email
+        }
 
-        const pNome = document.createElement('p')
-        pNome.innerHTML = novoContato.nome
+        agenda.push(novoContato)
 
-        const pTel = document.createElement('p')
-        pTel.innerHTML = novoContato.tel
+        destinoDOM.innerHTML = ''
 
-        const pEmail = document.createElement('p')
-        pEmail.innerHTML = novoContato.email
+        agenda.forEach((contato) => {
+            const div = document.createElement('div')
+            div.classList.add('contato')
 
+            const pNome = document.createElement('p')
+            pNome.innerHTML = contato.nome
 
-        div.appendChild(pNome)
-        div.appendChild(pTel)
-        div.appendChild(pEmail)
-        destinoDOM.appendChild(div)
+            const pTel = document.createElement('p')
+            pTel.innerHTML = contato.tel
+
+            const pEmail = document.createElement('p')
+            pEmail.innerHTML = contato.email
+
+            div.appendChild(pNome)
+            div.appendChild(pTel)
+            div.appendChild(pEmail)
+            destinoDOM.appendChild(div)
+        })
     }
 }
 
-export default contato
+export default contatos

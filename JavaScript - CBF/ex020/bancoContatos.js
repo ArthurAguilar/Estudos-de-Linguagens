@@ -1,3 +1,3 @@
-let contatos = []
+let agenda = []
 
-export { contatos }
+export { agenda }
