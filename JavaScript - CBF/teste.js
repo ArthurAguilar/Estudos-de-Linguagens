@@ -178,5 +178,41 @@
 // console.log(Symbol.keyFor(s5))
 // console.log(Symbol.keyFor(s6))
 
+class Jogador {
+    constructor(nome) {
+        this.nome = nome
+        this.id = Symbol()
+    }
+}
+
+// const jogadores = [new Jogador('j1'), new Jogador('j1'), new Jogador('j2'), new Jogador('j3'), new Jogador('j4'), new Jogador('j5'), new Jogador('j6'), new Jogador('j7'), new Jogador('j8'), new Jogador('j9'), new Jogador('j10')]
+
+// const exclusaoJogador = jogadores[0].id
+
+// const filtragemNome = jogadores.filter((cadaJogador) => {
+//     return cadaJogador.nome != 'j1'
+// })
+
+// const filtragemID = jogadores.filter((cadaJogador) => {
+//     return cadaJogador.id != exclusaoJogador
+// })
+
+// console.log(filtragemNome)
+
+const jogadores = [new Jogador('j1'), new Jogador('j1'), new Jogador('j2'), new Jogador('j3'), new Jogador('j4'), new Jogador('j5'), new Jogador('j6'), new Jogador('j7'), new Jogador('j8'), new Jogador('j9'), new Jogador('j10')]
+
+const simbolos = []
+
+const simbolosJogadores = jogadores.filter((cadaJogador) => {
+    return cadaJogador.nome == 'j1'
+})
+
+const idJogadores = simbolosJogadores.map((cadaJogador) =>  {
+    return cadaJogador.id
+})
+
+console.log(simbolosJogadores)
+console.log(idJogadores)
+
 
 
