@@ -151,7 +151,32 @@
 // npc2.info()
 // npc3.info()
 
-const array = ['Arthur', 'Amanda', 'Renner']
-const lastChar = array.length -1
+// const array = ['Arthur', 'Amanda', 'Renner']
+// const lastChar = array.length -1
 
-console.log(array[lastChar])
+// console.log(array[lastChar])
+
+// const s1 = Symbol()
+// const s2 = Symbol()
+// console.log(s1)
+// console.log(s2)
+// console.log(s1 === s2)
+
+// const s3 = Symbol.for('Arthur')
+// const s4 = Symbol.for('Amanda')
+// console.log(s3)
+// console.log(s4)
+// console.log(s3 === s4)
+// console.log(Symbol.keyFor(s3))
+// console.log(Symbol.keyFor(s4))
+
+// const s5 = Symbol.for('Churastei')
+// const s6 = Symbol.for('Churastei')
+// console.log(s5)
+// console.log(s6)
+// console.log(s5 == s6)
+// console.log(Symbol.keyFor(s5))
+// console.log(Symbol.keyFor(s6))
+
+
+
