@@ -2,8 +2,11 @@ import { agenda } from "./bancoContatos.js"
 
 let contatos = {
     addContato: (dados, destinoDOM) => {
+
+        let numTotal;
         
         const novoContato = {
+            id: Date.now(),
             nome: dados.nome,
             tel: dados.tel,
             email: dados.email
@@ -31,8 +34,12 @@ let contatos = {
             btnDelete.classList.add('btnDelete')
 
             btnDelete.addEventListener('click', () => {
-                const divPai = btnDelete.parentNode
-                divPai.remove()
+                const divPai = btnDelete.parentNode;
+                divPai.remove();
+
+                const index = Array.from(listaContatos.children).indexOf(divPai)
+                agenda.splice(index, 1)
+            
             })
             
             div.appendChild(pNome)
@@ -41,6 +48,7 @@ let contatos = {
             div.appendChild(btnDelete)
             destinoDOM.appendChild(div)
         })
+        console.log(agenda)
     }
 }
 

@@ -3,7 +3,6 @@
 import contatos from "./contatos.js"
 
 const btnGravar = document.querySelector('#btn_gravar')
-
 const inputNome = document.querySelector('#f_nome')
 const inputTel = document.querySelector('#f_telefone')
 const inputEmail = document.querySelector('#f_email')
@@ -24,3 +23,4 @@ btnGravar.addEventListener('click', () => {
     inputEmail.value = ''
     inputNome.focus()
 })
+
