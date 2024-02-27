@@ -213,6 +213,3 @@ const idJogadores = simbolosJogadores.map((cadaJogador) =>  {
 
 console.log(simbolosJogadores)
 console.log(idJogadores)
-
-
-
