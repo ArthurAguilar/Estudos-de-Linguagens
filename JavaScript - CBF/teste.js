@@ -208,8 +208,8 @@ const simbolosJogadores = jogadores.filter((cadaJogador) => {
 })
 
 const idJogadores = simbolosJogadores.map((cadaJogador) =>  {
-    return cadaJogador.id
+    simbolos.push(cadaJogador.id)
 })
 
-console.log(simbolosJogadores)
-console.log(idJogadores)
+// console.log(simbolosJogadores)
+console.log(simbolos)
