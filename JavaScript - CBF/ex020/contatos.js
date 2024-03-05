@@ -48,7 +48,7 @@ let contatos = {
             div.appendChild(btnDelete)
             destinoDOM.appendChild(div)
         })
-        console.log(agenda)
+        // console.log(agenda)
     }
 }
 

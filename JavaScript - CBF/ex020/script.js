@@ -23,4 +23,3 @@ btnGravar.addEventListener('click', () => {
     inputEmail.value = ''
     inputNome.focus()
 })
-

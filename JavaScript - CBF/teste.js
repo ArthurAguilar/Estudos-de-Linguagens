@@ -178,12 +178,12 @@
 // console.log(Symbol.keyFor(s5))
 // console.log(Symbol.keyFor(s6))
 
-class Jogador {
-    constructor(nome) {
-        this.nome = nome
-        this.id = Symbol()
-    }
-}
+// class Jogador {
+//     constructor(nome) {
+//         this.nome = nome
+//         this.id = Symbol()
+//     }
+// }
 
 // const jogadores = [new Jogador('j1'), new Jogador('j1'), new Jogador('j2'), new Jogador('j3'), new Jogador('j4'), new Jogador('j5'), new Jogador('j6'), new Jogador('j7'), new Jogador('j8'), new Jogador('j9'), new Jogador('j10')]
 
@@ -199,17 +199,32 @@ class Jogador {
 
 // console.log(filtragemNome)
 
-const jogadores = [new Jogador('j1'), new Jogador('j1'), new Jogador('j2'), new Jogador('j3'), new Jogador('j4'), new Jogador('j5'), new Jogador('j6'), new Jogador('j7'), new Jogador('j8'), new Jogador('j9'), new Jogador('j10')]
+// const jogadores = [new Jogador('j1'), new Jogador('j1'), new Jogador('j2'), new Jogador('j3'), new Jogador('j4'), new Jogador('j5'), new Jogador('j6'), new Jogador('j7'), new Jogador('j8'), new Jogador('j9'), new Jogador('j10')]
 
-const simbolos = []
+// const simbolos = []
 
-const simbolosJogadores = jogadores.filter((cadaJogador) => {
-    return cadaJogador.nome == 'j1'
-})
+// const simbolosJogadores = jogadores.filter((cadaJogador) => {
+//     return cadaJogador.nome != 'j1'
+// })
 
-const idJogadores = simbolosJogadores.map((cadaJogador) =>  {
-    simbolos.push(cadaJogador.id)
-})
+// const idJogadores = simbolosJogadores.map((cadaJogador) =>  {
+//     simbolos.push(cadaJogador.id)
+// })
 
 // console.log(simbolosJogadores)
-console.log(simbolos)
+
+let nome = new String('Arthur Guido')
+let nome2 = new String('Amanda')
+// let nomeComparacao = new String('Arthur')
+
+// console.log(nome)
+// console.log(typeof(nome))
+// console.log(nome.charAt(0))
+// console.log(nome.charCodeAt(0))
+// let nome3 = nome.concat(` e ${nome2}`)
+// console.log(nome3)
+// console.log(nome.indexOf('r'))
+// console.log(nome.lastIndexOf('r'))
+// console.log(nome.localeCompare(nomeComparacao))
+// console.log(nome.replace("Guido", "Aguilar"))
+// console.log(nome.search("Guido"))
