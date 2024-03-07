@@ -42,13 +42,31 @@
 // console.log(String.fromCodePoint(65, 114, 116, 104, 117, 114))
 
 
-let nome = new String("Arthur Guido Aguilar")
+let nome = new String("Arthur Guido Aguilar 123456")
+let nome2 = new String("Arthuuuuuuur Guiiiiiido Aguilar 123456")
+let num = "2, 20, 200, 2000, 20000"
 
-console.log(nome)
-console.log(nome.search("guido"))
-console.log(nome.search(/guido/i))
+// console.log(nome)
+// console.log(nome.search("guido"))
+// console.log(nome.search(/guido/i))
 
-console.log(nome.match("D"))
-console.log(nome.match(/a/ig))
+// console.log(nome.match("D"))
+// console.log(nome.match(/a/ig))
 
-console.log(nome.replace(/g/ig, "T"))
+// console.log(nome.replace(/g/ig, "T"))
+
+console.log(nome.match(/[au]/ig))
+
+//Metacaracteres
+console.log(nome.match(/\d/ig)) //Números
+console.log(nome.match(/\s/ig)) //Espaços em bracos
+console.log(nome.match(/\bA/ig)) //Alfanuméricos
+
+//Quantificadores
+console.log(nome2.match(/u+|i+/ig))
+console.log(num.match(/20/ig))
+console.log(num.match(/20+/ig))
+console.log(num.match(/20*/ig))
+console.log(num.match(/20?/ig))
+
+
