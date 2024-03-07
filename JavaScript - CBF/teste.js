@@ -213,9 +213,9 @@
 
 // console.log(simbolosJogadores)
 
-let nome = new String('Arthur Guido')
-let nome2 = new String('Amanda')
-// let nomeComparacao = new String('Arthur')
+// let nome = new String('Arthur Guido')
+// let nome2 = new String('Amanda')
+// // let nomeComparacao = new String('Arthur')
 
 // console.log(nome)
 // console.log(typeof(nome))
@@ -228,3 +228,51 @@ let nome2 = new String('Amanda')
 // console.log(nome.localeCompare(nomeComparacao))
 // console.log(nome.replace("Guido", "Aguilar"))
 // console.log(nome.search("Guido"))
+
+// let a = 10
+// let b = 20
+
+// [a, b] = [b, a]
+
+// console.log(a)
+// console.log(b)
+
+// let numeros = () => {
+//     return [10, 20, 30, 40]
+// }
+
+// let [a, b, c, d] = numeros()
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// console.log(d)
+
+
+// let aluno = {nome: 'Amanda', idade: 23}
+
+// let {nome, idade} = aluno
+
+// console.log(nome)
+// console.log(idade)
+
+// let aluno = ['Amanda', 23]
+
+// let [nome, idade] = aluno
+
+// console.log(nome)
+// console.log(idade)
+
+// const cores = () => {
+//     return ['Branco', 'Azul', 'Vermelho', 'Roxo', 'Amarelo']
+// }
+
+// let [c1,, c2,, c3] = cores()
+
+// console.log(c1)
+// console.log(c2)
+// console.log(c3)
+
+// texto = "Curso de JavaScript"
+// let [...t1] = texto.split(' ')
+// console.log(t1)
