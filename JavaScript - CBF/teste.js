@@ -276,3 +276,27 @@
 // texto = "Curso de JavaScript"
 // let [...t1] = texto.split(' ')
 // console.log(t1)
+
+let i; i = 10
+
+// let num = [1, 2, 3]
+// [n1, n2, n3] = num
+
+// let num = [11, 22, 33];
+// [n1, n2, n3] = num
+
+// let num = [11, 22, 33]
+// let [n1, n2, n3] = num
+
+let num = {
+    n1: 1, 
+    n2: 2,
+    n3: 3
+}
+let {n1, n2, n3} = num
+
+console.log(n1)
+
+
+
+
