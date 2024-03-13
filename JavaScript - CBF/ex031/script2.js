@@ -1,12 +1,12 @@
-// const formEl = document.querySelector('#form-api');
+const formEl = document.querySelector('#form-api');
 
-// formEl.addEventListener('submit', event => {
-//     event.preventDefault();
+formEl.addEventListener('submit', event => {
+    event.preventDefault();
 
-//     const formData = new FormData(formEl);
-//     const data = Object.fromEntries(formData);
+    const formData = new FormData(formEl);
+    const data = Object.fromEntries(formData);
 
 
-//     console.log(data)
-// });
+    console.log(data)
+});
 
