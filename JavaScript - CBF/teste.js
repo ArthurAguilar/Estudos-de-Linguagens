@@ -305,6 +305,9 @@
 
 console.log('Hoje é só pela bolinha. Domingueira, po! Tive que ir a loja pela manhã (quase virado) e a tarde tirei um cochilo. Agora tô indo lá pra amada!')
 
+dasdasdasd
+asdasd
+asdasdasdasd
 
 
 
