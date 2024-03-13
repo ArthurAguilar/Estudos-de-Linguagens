@@ -33,6 +33,8 @@ btnValidar.addEventListener('click', (evt) => {
         fNota.setCustomValidity('Botou caracteres demais, fiote!')
     } else if (estadoValidacao.rangeUnderflow) {
         fNota.setCustomValidity('Rapaz, tu não tem jeito, né?! Tá pequeno, orra')
+    } else if (estadoValidacao.valid) {
+        fNota.setCustomValidity('Finalmente acertou!')
     }
 
     fNota.reportValidity()
