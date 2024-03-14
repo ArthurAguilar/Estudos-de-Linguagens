@@ -47,4 +47,4 @@ btnZerar.addEventListener('click', () => {
     clearInterval(intervaloCronometro)
     timer.textContent = '00:00:00' 
     parciaisRegistradas.textContent = ""
-})
+}) 
