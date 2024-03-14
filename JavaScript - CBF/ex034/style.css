@@ -17,3 +17,29 @@
     border-radius: 10px;
     border: 5px solid #888;
 }
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-start;
+    width: 100%;
+}
+
+#divTimer {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+#botoes {
+    display: flex;    
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #ccc;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
