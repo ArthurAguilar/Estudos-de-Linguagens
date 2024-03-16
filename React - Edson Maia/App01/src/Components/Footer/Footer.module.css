@@ -1,0 +1,15 @@
+.containerFooter {
+    background-color: black;
+    border-top: 2px solid #f44336;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.containerFooter p {
+    font-size: 1.2rem;
+    color: white;
+}
