@@ -4,9 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    bottom: 0;
+    position: absolute;
     width: 100%;
+    padding-block: 0.1rem;
 }
 
 .containerFooter p {

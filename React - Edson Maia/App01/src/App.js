@@ -1,17 +1,21 @@
-import Header from './Components/Header'
-import Footer from './Components/Footer'
+import Header from './Components/Header/header'
+import Footer from './Components/Footer/footer'
+import Banner from './Components/Banner/banner'
+import Container from './Components/Container/container'
+
 
 
 export default function App() {
   return (
     <>
       <Header/>
-      <div className='containerPai'>
-        <p>Hello World! Olá mundo!</p>
-        <p>Oi, eu sou o Arthur Aguilar!</p>
-        <p>Sou desenvolvedor de software.</p>
-        <p>Hoje estou aprendendo sobre ReactJS</p>
-      </div>
+      <Banner/>
+      <Container>
+          <h1>Hello World! Olá mundo!</h1>
+          <p>Oi, eu sou o Arthur Aguilar!</p>
+          <p>Sou desenvolvedor de software.</p>
+          <p>Hoje estou aprendendo sobre ReactJS</p>
+      </Container>
       <Footer/>
     </>
   )
