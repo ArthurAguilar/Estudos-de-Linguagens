@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Header/>
-      <Banner/>
+      <Banner image = "home"/>
       <Container>
           <h1>Hello World! Olá mundo!</h1>
           <p>Oi, eu sou o Arthur Aguilar!</p>
