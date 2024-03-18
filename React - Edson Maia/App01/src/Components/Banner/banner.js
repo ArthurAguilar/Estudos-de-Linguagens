@@ -4,8 +4,11 @@ export default function Banner({ image }) {
     return (
         <div 
             className={styles.banner}
-            style={{ 
-                backgroundImage: `url(/images/banner-${image}.png)` }}   
-        ></div>
+            style = {{
+                backgroundImage: `url(/images/banner-${image}.png)`
+            }}
+        >
+
+        </div>
     )
 }
