@@ -2,7 +2,8 @@ import Header from './Components/Header/header'
 import Footer from './Components/Footer/footer'
 import Banner from './Components/Banner/banner'
 import Container from './Components/Container/container'
-
+import Card from './Components/Card/card'
+import videos from './json/db.json'
 
 
 export default function App() {
@@ -11,10 +12,14 @@ export default function App() {
       <Header/>
       <Banner image = "home"/>
       <Container>
-          <h1>Hello World! Olá mundo!</h1>
-          <p>Oi, eu sou o Arthur Aguilar!</p>
-          <p>Sou desenvolvedor de software.</p>
-          <p>Hoje estou aprendendo sobre ReactJS</p>
+          <h2>Geografia</h2>
+          <section className="cards">
+              {
+                videos.map((video) => {
+                  return <Card id={ video.id } key= { video.id }/>
+                })
+              }
+          </section>
       </Container>
       <Footer/>
     </>
