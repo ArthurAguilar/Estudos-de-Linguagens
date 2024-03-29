@@ -1,3 +1,5 @@
+package App001;
+
 import java.util.Scanner;
 
 public class scanner {
