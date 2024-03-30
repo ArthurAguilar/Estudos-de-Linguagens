@@ -1,22 +1,25 @@
-package EstruturasSequenciais;
-
+package App001;
 import java.util.Scanner;
 
-public class testando {
+public class NextLine {
     public static void main(String[] args) {
-        System.out.println("Digite os números: ");
-
         Scanner sc = new Scanner(System.in);
 
-        String x;
-        int y;
-        double z;
+        int x;
+        String s1, s2, s3;
 
-        x = sc.next();
-        y = sc.nextInt();
-        z = sc.nextDouble();
+        x = sc.nextInt();
+        sc.nextLine();
+        s1 = sc.nextLine();
+        s2 = sc.nextLine();
+        s3 = sc.nextLine();
 
-        System.out.printf("Você digitou %s, %d e %f", x, y, z);
-        sc.close()
+        System.out.println("Dados digitados: ");
+        System.out.println(x);
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+
+        sc.close();
     }
 }
