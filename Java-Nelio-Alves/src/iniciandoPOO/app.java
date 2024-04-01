@@ -2,9 +2,7 @@ package iniciandoPOO;
 
 import java.util.Locale;
 import java.util.Scanner;
-
 import iniciandoPOO.entities.Triangle;
-
 
 public class app {
     public static void main(String[] args) {
@@ -43,3 +41,4 @@ public class app {
         sc.close();
     }
 }
+
