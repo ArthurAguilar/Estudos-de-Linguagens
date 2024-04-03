@@ -41,4 +41,3 @@ public class app {
         sc.close();
     }
 }
-
