@@ -14,6 +14,5 @@ public class testes {
         System.out.println(word2);
         System.out.println(word3);
         System.out.println(word4);
-
     }
 }
