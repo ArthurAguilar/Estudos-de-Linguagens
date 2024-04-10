@@ -4,7 +4,6 @@ public class testes {
         String s = "Batata Carne Hamburguer Pizza";
 
         String[] vect = s.split(" ");
-
         String word1 = vect[0]; 
         String word2 = vect[1];
         String word3 = vect[2];
