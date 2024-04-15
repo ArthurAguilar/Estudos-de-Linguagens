@@ -1,2 +1,7 @@
-let x = (5 + 3 * (4 / 2 + 2))
-console.log(x)
+var a = 0
+function fun(a) {
+    console.log(a)
+    var a = 5
+}
+fun(10
+)
