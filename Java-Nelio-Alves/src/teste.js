@@ -14,3 +14,9 @@ console.log('---------------------')
 for (nome of names) {
     console.log(nome)
 }
+
+console.log('---------------------')
+
+for (nome in names) {
+    console.log(nome)
+}
