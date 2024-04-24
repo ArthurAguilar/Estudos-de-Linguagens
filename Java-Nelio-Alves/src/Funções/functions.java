@@ -1,17 +1,18 @@
 package Funções;
+
 import java.util.Scanner;
 
 public class functions {
     public static void main(String[] args) {        
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Enter three numbers: ");
-        int x = sc.nextInt();
-        int y = sc.nextInt();
-        int z = sc.nextInt();
+        System.out.println("Digite três números: ");
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
+        int n3 = sc.nextInt();
 
-        int higher = max(x, y, z);
-        showResults(higher);
+        int maiorValor = max(n1, n2, n3);
+        mostrarResultado(maiorValor);
         
         sc.close();
     }
@@ -20,7 +21,7 @@ public class functions {
         return (a > b && a > c) ? a : (b > c) ? b : c;
     }
 
-    public static void showResults(int higherValue) {
-        System.out.print("O maior valor é: " + higherValue);
+    public static void mostrarResultado(int resultado) {
+        System.out.printf("O maior valor digitado foi: %s", resultado);
     }
 }
