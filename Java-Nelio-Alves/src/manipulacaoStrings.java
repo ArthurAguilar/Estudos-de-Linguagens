@@ -12,6 +12,13 @@ public class manipulacaoStrings {
         int s08 = original.indexOf("eF"); //Posição da primeira ocorrência da string "eF"
         int s09 = original.lastIndexOf("eF"); //Posição da última ocorrência da string "eF"
 
+        String frutas = "Banana Maçã Melancia Limão";
+        String[] vect = frutas.split(" ");
+        String fruta1 = vect[0];
+        String fruta2 = vect[1];
+        String fruta3 = vect[2];
+        String fruta4 = vect[3];
+
         System.out.printf("Original: %s\n", original);
         System.out.printf("Original Length: %s\n", original.length());
         System.out.printf("trim(): %s\n", s01);
@@ -24,5 +31,10 @@ public class manipulacaoStrings {
         System.out.printf("Replace('bc', 'sd'): %s\n", s07);
         System.out.printf("IndexOf('eF'): %s\n", s08);
         System.out.printf("LastIndexOf('eF'): %s\n", s09);
+        System.out.println("frutas.Split(' '): ");
+        System.out.printf("Frutas1(split): %s\n", fruta1);
+        System.out.printf("Frutas2(split): %s\n", fruta2);
+        System.out.printf("Frutas3(split): %s\n", fruta3);
+        System.out.printf("Frutas4(split): %s\n", fruta4);
     }
 }
