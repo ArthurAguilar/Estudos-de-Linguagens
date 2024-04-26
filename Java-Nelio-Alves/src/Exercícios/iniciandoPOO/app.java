@@ -23,13 +23,13 @@ public class app {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        x.areaDoTriangulo();
-        y.areaDoTriangulo();
+        double areaX = x.areaDoTriangulo();
+        double areaY = y.areaDoTriangulo();
 
-        System.out.printf("Área do Triângulo X: %.4f%n", x.areaDoTriangulo());
-        System.out.printf("Área do Triângulo Y: %.4f%n", y.areaDoTriangulo());
+        System.out.printf("Área do Triângulo X: %.4f%n", areaX);
+        System.out.printf("Área do Triângulo Y: %.4f%n", areaY);
 
-        if (x.areaDoTriangulo() > y.areaDoTriangulo()) {
+        if (areaX > areaY) {
             System.out.print("Maior área: X");
         } else {
             System.out.print("Maior área: Y");
