@@ -1,7 +1,8 @@
-package iniciandoPOO;
+package Exercícios.iniciandoPOO;
 import java.util.Locale;
 import java.util.Scanner;
-import iniciandoPOO.entities.Triangle;
+
+import Exercícios.iniciandoPOO.entities.Triangle;
 
 public class app {
     public static void main(String[] args) {
@@ -22,16 +23,13 @@ public class app {
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        double p = (x.a + x.b + x.c) / 2;
-        double areaX = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+        x.areaDoTriangulo();
+        y.areaDoTriangulo();
 
-        p = (y.a + y.b + y.c) / 2;
-        double areaY = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+        System.out.printf("Área do Triângulo X: %.4f%n", x.areaDoTriangulo());
+        System.out.printf("Área do Triângulo Y: %.4f%n", y.areaDoTriangulo());
 
-        System.out.printf("Área do Triângulo X: %.4f%n", areaX);
-        System.out.printf("Área do Triângulo Y: %.4f%n", areaY);
-
-        if (areaX > areaY) {
+        if (x.areaDoTriangulo() > y.areaDoTriangulo()) {
             System.out.print("Maior área: X");
         } else {
             System.out.print("Maior área: Y");
