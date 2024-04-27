@@ -20,18 +20,15 @@ public class ProdutoEstoque {
         System.out.print("Quantidade: ");
         produto.quantidade = sc.nextInt();
         
-
-        int qtdAdd;
-        int qtdRem;
         System.out.print(produto);
 
         System.out.print("Gostaria de adicionar mais quantos produtos? ");
-        qtdAdd = sc.nextInt();
+        int qtdAdd= sc.nextInt();
         System.out.print(produto.addProduto(qtdAdd));
 
 
         System.out.print("Gostaria de remover quantos produtos? ");
-        qtdRem = sc.nextInt();
+        int qtdRem = sc.nextInt();
         System.out.print(produto.removerProduto(qtdRem)); 
 
 
