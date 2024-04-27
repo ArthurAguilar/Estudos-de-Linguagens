@@ -1,4 +1,4 @@
-package App001;
+package Exercícios.App001;
 
 public class comandosMath {
     public static void main(String[] args) {

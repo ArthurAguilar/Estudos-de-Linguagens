@@ -1,4 +1,4 @@
-package EstruturasRepetitivas.exercises;
+package Exercícios.EstruturasRepetitivas.exercises;
 import java.util.Scanner;
 
 public class ex02 {

@@ -1,4 +1,4 @@
-package App001;
+package Exercícios.App001;
 
 import java.util.Locale;
 

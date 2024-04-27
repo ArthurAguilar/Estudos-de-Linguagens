@@ -1,4 +1,4 @@
-package EstruturasCondicionais;
+package Exercícios.EstruturasCondicionais;
 import java.util.Scanner;
 
 public class ex005 {

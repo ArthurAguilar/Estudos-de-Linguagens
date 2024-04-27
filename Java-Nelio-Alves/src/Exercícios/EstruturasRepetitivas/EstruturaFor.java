@@ -1,4 +1,4 @@
-package EstruturasRepetitivas;
+package Exercícios.EstruturasRepetitivas;
 import java.util.Scanner;
 
 public class EstruturaFor {

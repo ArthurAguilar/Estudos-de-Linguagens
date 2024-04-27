@@ -1,7 +1,7 @@
-package EstruturasCondicionais;
+package Exercícios.EstruturasCondicionais;
 import java.util.Scanner;
 
-public class ex001 {
+public class ex002 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -9,10 +9,10 @@ public class ex001 {
         System.out.print("Digite um número: ");
         int x = sc.nextInt();
 
-        if (x > 0) {
-            System.out.println("POSITIVO!");
+        if (x % 2 == 0) {
+            System.out.println("PAR!");
         } else {
-            System.out.println("NEGATIVO");
+            System.out.println("IMPAR");
         }
 
         sc.close();

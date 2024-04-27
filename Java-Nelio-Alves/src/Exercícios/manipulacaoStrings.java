@@ -1,3 +1,4 @@
+package Exercícios;
 public class manipulacaoStrings {
     public static void main(String[] args) {
         

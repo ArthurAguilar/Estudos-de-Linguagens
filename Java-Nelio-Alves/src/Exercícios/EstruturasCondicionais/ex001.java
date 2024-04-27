@@ -1,20 +1,20 @@
-package EstruturasCondicionais;
+package Exercícios.EstruturasCondicionais;
 import java.util.Scanner;
 
-public class ex003 {
+public class ex001 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Digite um número: ");
         int x = sc.nextInt();
-        int z = sc.nextInt();
 
-        if (x % z == 0 || z % x == 0) {
-            System.out.println("São múltiplos!");
+        if (x > 0) {
+            System.out.println("POSITIVO!");
         } else {
-            System.out.println("Não são múltiplos!");
+            System.out.println("NEGATIVO");
         }
+
         sc.close();
     }
 }

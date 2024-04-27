@@ -1,4 +1,4 @@
-package EstruturasRepetitivas.exercises;
+package Exercícios.EstruturasRepetitivas.exercises;
 
 public class ex01 {
     public static void main(String[] args) {
