@@ -8,9 +8,7 @@ public class ProdutoEstoque {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-
         Produto produto = new Produto();
-
 
         System.out.println("Entre os dados do produto: ");
         System.out.print("Nome: ");
@@ -26,11 +24,9 @@ public class ProdutoEstoque {
         int qtdAdd= sc.nextInt();
         System.out.print(produto.addProduto(qtdAdd));
 
-
         System.out.print("Gostaria de remover quantos produtos? ");
         int qtdRem = sc.nextInt();
         System.out.print(produto.removerProduto(qtdRem)); 
-
 
         sc.close();
     }
