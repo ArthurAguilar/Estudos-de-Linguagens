@@ -3,6 +3,7 @@ import java.util.Scanner;
 import Conversao.Entities.ConversorMoedas;
 
 public class appConversao {
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
@@ -15,4 +16,5 @@ public class appConversao {
         
         sc.close();
     }
+    
 }
