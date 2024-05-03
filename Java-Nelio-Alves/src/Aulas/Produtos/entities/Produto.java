@@ -28,6 +28,20 @@ public class Produto {
         this.nome = nome;
     }
 
+    public double getPreco() {
+        System.out.println(preco);
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
+
+    public int getQuantitade() {
+        System.out.println(quantidade);
+        return quantidade;
+    }
+
     public double precoTotalEstoque() {
         return quantidade * preco;
     }
@@ -37,7 +51,6 @@ public class Produto {
         return String.format("\nDados atualizados:\n %s, R$%.2f, %d unidades, total no estoque: R$%.2f\n\n", nome, preco, quantidade, precoTotalEstoque());
     }
     
-
     public String removerProduto(int qtd) {
         this.quantidade -= qtd;
         return String.format("\nDados atualizados:\n %s, R$%.2f, %d unidades, total no estoque: R$%.2f\n\n", nome, preco, quantidade, precoTotalEstoque());

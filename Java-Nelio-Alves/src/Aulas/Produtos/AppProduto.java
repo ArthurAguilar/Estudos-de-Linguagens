@@ -1,8 +1,6 @@
 package Aulas.Produtos;
-
 import java.util.Scanner;
-
-import Aulas.Produtos.entities.*;
+import Aulas.Produtos.entities.Produto;
 
 public class AppProduto {
     public static void main(String[] args) {
@@ -23,7 +21,7 @@ public class AppProduto {
         meuProduto.getNome();
         meuProduto.setNome("Computador");
         meuProduto.getNome();
-        
+
         System.out.print("Gostaria de adicionar mais quantos produtos? ");
         int qtdAdd= sc.nextInt();
         System.out.print(meuProduto.addProduto(qtdAdd));
