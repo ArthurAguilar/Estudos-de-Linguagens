@@ -1,8 +1,8 @@
-package Exercícios.ProdutosNoEstoque;
+package ProdutosNoEstoque;
 
 import java.util.Scanner;
 
-import Exercícios.ProdutosNoEstoque.Entities.Produto;
+import ProdutosNoEstoque.Entities.Produto;
 
 public class ProdutoEstoque {
     public static void main(String[] args) {

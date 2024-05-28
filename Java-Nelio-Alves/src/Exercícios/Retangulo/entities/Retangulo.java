@@ -1,4 +1,4 @@
-package Exercícios.Retangulo.entities;
+package Retangulo.entities;
 
 public class Retangulo {
     public double largura;

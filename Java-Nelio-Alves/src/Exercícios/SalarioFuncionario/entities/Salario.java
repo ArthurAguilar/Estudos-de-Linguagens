@@ -1,4 +1,4 @@
-package Exercícios.SalarioFuncionario.entities;
+package SalarioFuncionario.entities;
 
 public class Salario {
 

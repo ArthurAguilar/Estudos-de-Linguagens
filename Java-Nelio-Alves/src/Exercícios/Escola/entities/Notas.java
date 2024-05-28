@@ -1,4 +1,4 @@
-package Exercícios.Escola.entities;
+package Escola.entities;
 
 public class Notas {
     public String nome;

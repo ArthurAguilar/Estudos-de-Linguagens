@@ -1,4 +1,4 @@
-package Exercícios.ProdutosNoEstoque.Entities;
+package ProdutosNoEstoque.Entities;
 
 public class Produto {
     public String nome;

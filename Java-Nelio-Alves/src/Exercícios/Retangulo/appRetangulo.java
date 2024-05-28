@@ -1,8 +1,8 @@
-package Exercícios.Retangulo;
+package Retangulo;
 
 import java.util.Scanner;
 
-import Exercícios.Retangulo.entities.Retangulo;
+import Retangulo.entities.Retangulo;
 
 public class appRetangulo {
     public static void main(String[] args) {

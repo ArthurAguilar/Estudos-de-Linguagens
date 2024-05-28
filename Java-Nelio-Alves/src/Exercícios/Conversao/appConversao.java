@@ -1,7 +1,7 @@
-package Exercícios.Conversao;
+package Conversao;
 import java.util.Scanner;
 
-import Exercícios.Conversao.Entities.ConversorMoedas;
+import Conversao.Entities.ConversorMoedas;
 
 public class appConversao {
     

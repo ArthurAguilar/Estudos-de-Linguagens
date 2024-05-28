@@ -1,6 +1,6 @@
-package Exercícios.Escola;
+package Escola;
 import java.util.Scanner;
-import Exercícios.Escola.entities.Notas;
+import Escola.entities.Notas;
 
 public class EscolaApp {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Exercícios.Conversao.Entities;
+package Conversao.Entities;
 
 public class ConversorMoedas {
 

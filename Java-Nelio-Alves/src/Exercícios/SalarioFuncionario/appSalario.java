@@ -1,6 +1,6 @@
-package Exercícios.SalarioFuncionario;
+package SalarioFuncionario;
 import java.util.Scanner;
-import Exercícios.SalarioFuncionario.entities.Salario;
+import SalarioFuncionario.entities.Salario;
 
 public class appSalario {
     public static void main(String[] args) {
