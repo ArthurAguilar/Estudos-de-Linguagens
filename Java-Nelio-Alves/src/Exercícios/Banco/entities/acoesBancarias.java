@@ -2,16 +2,19 @@ package Banco.entities;
 
 public class acoesBancarias {
 
+    //parâmetros
     public int numConta;
     public String nomeTitular;
     private double contaBancaria;
     
+    //Função 1 = mostrar num, nome e conta bancária
     public acoesBancarias(int numConta, String nomeTitular, double contaBancaria) {
         this.numConta = numConta;
         this.nomeTitular = nomeTitular;
         this.contaBancaria = contaBancaria;
     }
 
+    //Função 2 = mostra apenas num e nome.
     public acoesBancarias(int numConta, String nomeTitular){
         this.numConta = numConta;
         this.nomeTitular = nomeTitular;
