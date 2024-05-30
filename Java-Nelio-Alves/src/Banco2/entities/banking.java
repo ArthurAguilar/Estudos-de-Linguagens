@@ -17,13 +17,29 @@ public class banking {
         this.accountHolder = accountHolder;
     }
 
+    public int getAccountNumber() {
+        return this.accountNumber;
+    } 
+
+    public String getAccountHolder() {
+        return this.accountHolder;
+    }
+
+    public void setAccountHolder(String newName) {
+        this.accountHolder = newName;
+    }
+
+    public void depositMoney(double depositValue) {
+        this.accountBalance += depositValue;
+    }
+
     public void withdrawMoney(double withdrawValue) {
         if (withdrawValue < accountBalance) {
-            this.accountBalance -= (withdrawValue - 5); 
+            this.accountBalance -= (withdrawValue + 5); 
         }
     }
 
     public void showAccount() {
-        System.out.print("Account data {\n Account: %d, Holder: %s, Balance: %2.f}");
+        System.out.printf("Account data: \n{ Account: %d, Holder: %s, Balance: %.2f}\n", this.accountNumber, this.accountHolder, this.accountBalance);
     }
 }
