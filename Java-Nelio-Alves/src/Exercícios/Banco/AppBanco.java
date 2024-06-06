@@ -30,7 +30,6 @@ public class AppBanco {
         double deposito = sc.nextDouble();
         banco.depositarValor(deposito);
         banco.mostrarConta();
-
         System.out.print("\nQual valor desejado para saque? (R$5,00 de taxa) ");
         double saque = sc.nextDouble();
         banco.sacarValor(saque);
