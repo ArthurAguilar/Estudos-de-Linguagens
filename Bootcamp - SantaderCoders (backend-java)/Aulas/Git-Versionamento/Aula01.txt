@@ -17,3 +17,4 @@ A maioria das operações feitas pelo Git são locais e por isso boa parte das o
 5². Git Diff --staged -> mostra as linhas modificadas dos arquivos já preparados(stageds)
 6. Git Commit -m "título do commit" -> Dar commit na pasta
 7. Git Push -> Enviar os commits para o repositório online.
+8. Git 
