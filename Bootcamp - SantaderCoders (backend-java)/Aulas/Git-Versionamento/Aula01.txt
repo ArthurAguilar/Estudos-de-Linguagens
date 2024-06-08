@@ -12,5 +12,4 @@
  1. Git Clone -> Faz download de um repositório online.
  2. Git Init -> Inicia repositório git de versionamento.
  3. Git Status -> Verifica o status dos arquivos da pasta.
- 4. 
-
+ 4. Git add -> "Prepara" (staged) a alteração feita no arquivo para commitar
