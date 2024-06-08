@@ -2,16 +2,18 @@
 
 2. Desenvolvimento de código em colaboração com outros integrantes.
 
- --> Git <--
- É um sistema de versionamento de código, que guarda os registro de versão como >SNAPSHOTS< (fotos) do estado do projeto, além da referência/caminho para essa foto.
+--> Git <--
+É um sistema de versionamento de código, que guarda os registro de versão como >SNAPSHOTS< (fotos) do estado do projeto, além da referência/caminho para essa foto.
 
- A maioria das operações feitas pelo Git são locais e por isso boa parte das operações são praticamente instantâneas devido à facilidade de acessar arquivos em seu próprio computador.
+A maioria das operações feitas pelo Git são locais e por isso boa parte das operações são praticamente instantâneas devido à facilidade de acessar arquivos em seu próprio computador.
 
- -->> Comandos do Terminal <<--
+-->> Comandos do Terminal <<--
  
- 1. Git Clone -> Faz download de um repositório online.
- 2. Git Init -> Inicia repositório git de versionamento.
- 3. Git Status -> Verifica o status dos arquivos da pasta.
- 4. Git Add -> "Prepara" (staged) a alteração feita no arquivo para commitar
- 5. Git Diff -> Mostra as linhas modificadas do arquivo.
- 5². Git Diff --staged -> mostra as linhas modificadas dos arquivos já preparados(stageds)
+1. Git Clone -> Faz download de um repositório online.
+2. Git Init -> Inicia repositório git de versionamento.
+3. Git Status -> Verifica o status dos arquivos da pasta.
+4. Git Add -> "Prepara" (staged) a alteração feita no arquivo para commitar
+5. Git Diff -> Mostra as linhas modificadas do arquivo.
+5². Git Diff --staged -> mostra as linhas modificadas dos arquivos já preparados(stageds)
+6. Git Commit -m "título do commit" -> Dar commit na pasta
+7. Git Push -> Enviar os commits para o repositório online.
