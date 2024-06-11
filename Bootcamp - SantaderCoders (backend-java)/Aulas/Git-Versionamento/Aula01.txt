@@ -17,7 +17,12 @@ A maioria das operações feitas pelo Git são locais e por isso boa parte das o
 5². Git Diff --staged -> mostra as linhas modificadas dos arquivos já preparados(stageds)
 6. Git Commit -m "título do commit" -> Dar commit na pasta
 7. Git Push -> Enviar os commits para o repositório online.
-8. Git Log -> Historico dos ultimos commits feitos com a data, hash, autor, branch e etc.
-9. Git Restore -> Remove a modificação feita e retorna o arquivo ao ultimo commit (ou save).
-9. Git Restore --staged -> Retorna o arquivo para antes da forma "staged" e volta para modo "modificado".
-
+8. Git Pull -> Sincronizar o código com o repositório remoto.
+9. Git Fetch -> Sicroniza o código mas sem inserir (use Git Diff pra ver a diferença do codigo da origem e o da branch)
+10. Git Log -> Historico dos ultimos commits feitos com a data, hash, autor, branch e etc.
+11. Git Restore -> Remove a modificação feita e retorna o arquivo ao ultimo commit (ou save).
+11. Git Restore --staged -> Retorna o arquivo para antes da forma "staged" e volta para modo "modificado".
+12. Git Branch -> Verifica as ramificações existentes.
+13. Git Branch "nome" -> Cria nova ramificação. 
+14. Git Checkout "nome" -> Muda a ramificação atual.
+15. Git merge "nome" -> Dá merge (junta) as ramificações; puxa a alteração do outro pra branch atual.
