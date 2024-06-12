@@ -1,19 +1,22 @@
+package Aulas.EstruturaDados.ListaMercado;
+
 import java.util.Scanner;
 
-
-public class listaMercado {
-    public static void ListaMercado(String[] args) {
+public class Supermercado {
+    public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);
         
         int opcao;
         do {
-            System.out.println("Lista de Compras - Supermercado:");
+            System.out.println("#####################################");
+            System.out.println("   Lista de Compras - Supermercado:");
+            System.out.println("#####################################\n");
             System.out.println("1. Adicionar item a lista ");
             System.out.println("2. Verificar lista ");
             System.out.println("3. Remover item da lista ");
-            System.out.println("4. Sair do programa. ");
-            System.out.println("Digite a opção desejada: [1, 2, 3, 4] ");
+            System.out.println("4. Sair do programa. \n");
+            System.out.print("Digite a opção desejada: ");
             opcao = sc.nextInt();
 
             switch (opcao) {
