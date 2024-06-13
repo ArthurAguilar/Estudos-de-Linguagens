@@ -1,4 +1,4 @@
-package Aulas.EstruturaDados.ListaMercado;
+package Aulas.EstruturaDados.Mercado.ListaMercado;
 
 import java.util.Scanner;
 

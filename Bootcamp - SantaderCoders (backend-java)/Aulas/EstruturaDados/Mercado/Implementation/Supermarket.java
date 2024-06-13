@@ -1,4 +1,4 @@
-package Aulas.EstruturaDados.Implementation;
+package Aulas.EstruturaDados.Mercado.Implementation;
 
 public interface Supermarket {
     
