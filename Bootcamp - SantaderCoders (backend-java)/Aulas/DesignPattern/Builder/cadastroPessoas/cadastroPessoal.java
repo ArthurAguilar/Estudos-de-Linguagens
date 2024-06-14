@@ -1,4 +1,4 @@
-package Aulas.DesignPattern.Builder;
+package Aulas.DesignPattern.Builder.cadastroPessoas;
 
 public class cadastroPessoal {
     public static void main(String[] args) {
@@ -11,10 +11,8 @@ public class cadastroPessoal {
                                 .idade(24)
                                 .nome("Amanda")
                                 .sobrenome("Rosa")
-                                .criarPessoa();
+                                .build();
         System.out.println(pessoa2);
         
-
-
     }
 }
