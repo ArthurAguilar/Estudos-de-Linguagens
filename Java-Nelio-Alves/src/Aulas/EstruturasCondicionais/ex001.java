@@ -1,4 +1,5 @@
 package Aulas.EstruturasCondicionais;
+
 import java.util.Scanner;
 
 public class ex001 {
