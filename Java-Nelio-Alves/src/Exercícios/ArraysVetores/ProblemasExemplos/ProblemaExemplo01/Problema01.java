@@ -1,8 +1,8 @@
-package ArraysVetores.ProblemasExemplos;
+package ArraysVetores.ProblemasExemplos.ProblemaExemplo01;
 
 import java.util.Scanner;
 
-public class ProblemaExemplo01 {
+public class Problema01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
