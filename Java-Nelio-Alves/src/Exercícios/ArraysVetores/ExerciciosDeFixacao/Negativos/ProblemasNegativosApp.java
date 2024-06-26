@@ -1,8 +1,8 @@
-package ArraysVetores.ExerciciosDeFixacao.ProblemasNegativos.SemClasse;
+package ArraysVetores.ExerciciosDeFixacao.Negativos;
 
 import java.util.Scanner;
 
-public class ProblemasNegativos {
+public class ProblemasNegativosApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
