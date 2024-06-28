@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class DadosDasPessoasService {
     
-    // public static void getQuantidadePessoas (Scanner sc) {
-    //     System.out.print("Quantas pessoas serão digitadas? ");
-    //     int qtdPessoasDigitadas = sc.nextInt();
-    //     sc.nextLine();
-    // }
+    public static int getQuantidadePessoas (Scanner sc) {
+        System.out.print("Quantas pessoas serão digitadas? ");
+        int qtdPessoasDigitadas = sc.nextInt();
+        sc.nextLine();
+        return qtdPessoasDigitadas;
+    }
     
     public static DadosDasPessoas[] coletarDados(Scanner sc, int qtdPessoas) {
         DadosDasPessoas[] dadosPessoais = new DadosDasPessoas[qtdPessoas];

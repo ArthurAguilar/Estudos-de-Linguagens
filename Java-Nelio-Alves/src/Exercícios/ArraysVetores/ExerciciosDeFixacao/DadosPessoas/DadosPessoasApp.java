@@ -11,10 +11,8 @@ public class DadosPessoasApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
-        
-        System.out.print("Quantas pessoas serão digitadas? ");
-        int qtdPessoas = sc.nextInt();
-        sc.nextLine();
+
+        int qtdPessoas = DadosDasPessoasService.getQuantidadePessoas(sc);
 
         DadosDasPessoas[] dadosPessoais = DadosDasPessoasService.coletarDados(sc, qtdPessoas);
 
