@@ -16,12 +16,19 @@ public class DadosPessoasApp {
         int qtdPessoas = sc.nextInt();
         sc.nextLine();
 
-        DadosDasPessoasService.coletarDados(sc, qtdPessoas);
+        DadosDasPessoas[] dadosPessoais = DadosDasPessoasService.coletarDados(sc, qtdPessoas);
 
-        System.out.printf("Menor altura: ", DadosDasPessoasService.calcularMenorAltura(null));
-
-
+        float menorAltura = DadosDasPessoasService.calcularMenorAltura(dadosPessoais);
+        System.out.printf("\nMenor altura: %.2f", menorAltura);     
         
+        float maiorAltura = DadosDasPessoasService.calcularMaiorAltura(dadosPessoais);
+        System.out.printf("\nMaior altura: %.2f", maiorAltura);
+
+        int quantidadeHomens = DadosDasPessoasService.calcularQuantidadeDeHomens(dadosPessoais);
+        System.out.printf("\nQuantidade de homens: %d", quantidadeHomens);
+
+        int quantidadeMulheres = DadosDasPessoasService.calcularQuantidadeMulheres(dadosPessoais);
+        System.out.printf("\nQuantidade de mulheres: %d", quantidadeMulheres);
         
         sc.close();
     }

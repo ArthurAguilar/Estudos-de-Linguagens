@@ -1,7 +1,6 @@
 package ArraysVetores.ExerciciosDeFixacao.DadosPessoas.Entities;
 
 import java.util.Scanner;
-import ArraysVetores.ExerciciosDeFixacao.Alturas.Entities.DadosPessoa;
 
 public class DadosDasPessoasService {
     
@@ -31,7 +30,7 @@ public class DadosDasPessoasService {
                         throw new IllegalArgumentException("Gênero inválido: 'M' para Masculino e 'F' para Feminino");
                     }
                 } catch (Exception e) {
-                    System.out.print("Deu erro!" + e.getMessage());    
+                    System.out.print(e.getMessage());    
                 } 
             }
             dadosPessoais[i] = new DadosDasPessoas(altura, genero);
@@ -47,6 +46,43 @@ public class DadosDasPessoasService {
                 menorAltura = dadosDasPessoas.getAltura();
             }
         }
+
         return menorAltura;
+    }
+
+    public static float calcularMaiorAltura(DadosDasPessoas[] dadosPessoais) {
+        float maiorAltura = Float.MIN_VALUE;
+
+        for (DadosDasPessoas dadosDasPessoas : dadosPessoais) {
+            if (dadosDasPessoas.getAltura() > maiorAltura) {
+                maiorAltura = dadosDasPessoas.getAltura();
+            }
+        }
+
+        return maiorAltura;
+    }
+
+    public static int calcularQuantidadeDeHomens(DadosDasPessoas[] dadosPessoais) {
+        int quantidadeHomens = 0;
+
+        for (DadosDasPessoas dadosDasPessoas : dadosPessoais) {
+            if (dadosDasPessoas.getGenero() == 'M') {
+                quantidadeHomens++;
+            }
+        }
+
+        return quantidadeHomens;
+    }
+
+    public static int calcularQuantidadeMulheres(DadosDasPessoas[] dadosPessoais) {
+        int quantidadeMulheres = 0;
+
+        for (DadosDasPessoas dadosDasPessoas : dadosPessoais) {
+            if (dadosDasPessoas.getGenero() == 'F') {
+                quantidadeMulheres++;
+            }
+        }
+
+        return quantidadeMulheres;
     }
 }
