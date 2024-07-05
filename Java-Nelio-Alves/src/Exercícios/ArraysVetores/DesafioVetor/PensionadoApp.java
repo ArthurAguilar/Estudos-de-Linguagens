@@ -15,6 +15,7 @@ public class PensionadoApp {
         Pensionado[] aluguelQuartos = Pensionado.alugarQuarto(sc, numEstudantes);
         
         Pensionado.mostrarRelatorio(aluguelQuartos);
+        
 
         sc.close();
     }
