@@ -16,7 +16,6 @@ public class PensionadoApp {
         
         Pensionado.mostrarRelatorio(aluguelQuartos);
         
-
         sc.close();
     }
 }
