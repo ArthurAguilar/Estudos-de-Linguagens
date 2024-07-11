@@ -8,7 +8,6 @@ import ArraysVetores.DesafioVetor.Entities.Pensionado;
 public class PensionadoApp {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
         Locale.setDefault(Locale.US);
         
         int numEstudantes = Pensionado.getNumEstudantes(sc);
