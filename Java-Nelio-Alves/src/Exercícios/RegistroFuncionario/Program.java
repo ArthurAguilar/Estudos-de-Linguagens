@@ -44,7 +44,6 @@ public class Program {
             listaDosFuncionarios.add(new Registro(idFuncionario, nomeFuncionario, salarioFuncionario));
         }
 
-
         // ESCOLHER FUNCIONÁRIO PARA AUMENTO SALARIAL
 
         Registro funcionario = null;
