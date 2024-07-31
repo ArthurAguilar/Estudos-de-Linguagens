@@ -31,8 +31,8 @@ public class Program {
                 System.out.print("Tente outro: ");
                 idFuncionario = sc.nextInt();
             } 
-            sc.nextLine();
 
+            sc.nextLine();
             System.out.print("Nome: ");
             String nomeFuncionario = sc.nextLine();
 
