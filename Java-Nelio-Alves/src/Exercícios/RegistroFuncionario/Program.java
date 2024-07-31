@@ -41,7 +41,9 @@ public class Program {
             sc.nextLine();
 
             System.out.println("Funcionário #" + (i + 1) + " adicionado sucesso!\n");
-            listaDosFuncionarios.add(new Registro(idFuncionario, nomeFuncionario, salarioFuncionario));
+
+            Registro funcionario = new Registro(idFuncionario, nomeFuncionario, salarioFuncionario);
+            listaDosFuncionarios.add(funcionario);
         }
 
         // ESCOLHER FUNCIONÁRIO PARA AUMENTO SALARIAL
@@ -56,7 +58,7 @@ public class Program {
                 System.out.print("Digite o valor em porcentagem que deseja aumentar: ");
                 float valorAumentoSalarial = sc.nextFloat();
                 funcionario.setAumentoSalarial(valorAumentoSalarial);
-                System.out.printf("O valor do funcionário #%d foi aumentado em %.1f%% com sucesso!", idFuncionarioAumentoSalarial, valorAumentoSalarial);
+                System.out.printf("O salário do funcionário #%d foi aumentado em %.2f%% com sucesso!", idFuncionarioAumentoSalarial, valorAumentoSalarial);
             } else {
                 System.out.println("Não há ninguém com este ID, tente novamente!");
             }
