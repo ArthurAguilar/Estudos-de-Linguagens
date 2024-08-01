@@ -21,7 +21,7 @@ public class Program {
                 System.out.printf("Posição %d x %d: ", i, j);
                 matriz[i][j] = sc.nextInt();
                 if (matriz[i][j] < 0) {
-                    totalNumNegativos += 1;
+                    totalNumNegativos ++;
                 }
             }
         }
