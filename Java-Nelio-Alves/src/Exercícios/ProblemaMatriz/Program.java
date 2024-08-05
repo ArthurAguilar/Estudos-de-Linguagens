@@ -6,7 +6,7 @@ public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        //Criando a matriz e variáveis
+        // Criando a matriz e variáveis
         System.out.print("Quantidade linhas: ");
         int qtdLinhas = sc.nextInt();
         System.out.print("Quantidade colunas: ");
@@ -15,7 +15,7 @@ public class Program {
         int[][] matriz = new int[qtdLinhas][qtdColunas];
 
 
-        //Valorando a matriz
+        // Valorando a matriz
         System.out.println();
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
