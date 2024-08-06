@@ -5,11 +5,9 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-import java.util.Scanner;
 
 public class Program2 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
         LocalDate hr1 = LocalDate.parse("2022-07-20");
 		LocalDateTime hr2 = LocalDateTime.parse("2022-07-20T01:30:26");
@@ -31,8 +29,7 @@ public class Program2 {
 
         System.out.println("Iso_Date = " + hr2.format(fmt4));
         System.out.println("Iso_Instant = " + fmt5.format(hr3));
-
         
-        sc.close();
+
     }
 }
