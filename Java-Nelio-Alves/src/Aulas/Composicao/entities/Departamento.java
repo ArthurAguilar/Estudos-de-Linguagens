@@ -1,4 +1,4 @@
-package Aulas.EnumeracaoComposicao.entities;
+package Aulas.Composicao.entities;
 
 public class Departamento {
     

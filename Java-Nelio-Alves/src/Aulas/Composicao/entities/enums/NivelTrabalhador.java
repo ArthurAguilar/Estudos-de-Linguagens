@@ -1,4 +1,4 @@
-package Aulas.EnumeracaoComposicao.entities.enums;
+package Aulas.Composicao.entities.enums;
 
 public enum NivelTrabalhador {
     JUNIOR,

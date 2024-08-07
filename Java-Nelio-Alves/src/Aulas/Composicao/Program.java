@@ -1,14 +1,14 @@
-package Aulas.EnumeracaoComposicao;
+package Aulas.Composicao;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
-import Aulas.EnumeracaoComposicao.entities.Departamento;
-import Aulas.EnumeracaoComposicao.entities.HoraContrato;
-import Aulas.EnumeracaoComposicao.entities.Trabalhador;
-import Aulas.EnumeracaoComposicao.entities.enums.NivelTrabalhador;
+import Aulas.Composicao.entities.Departamento;
+import Aulas.Composicao.entities.HoraContrato;
+import Aulas.Composicao.entities.Trabalhador;
+import Aulas.Composicao.entities.enums.NivelTrabalhador;
 
 public class Program {
     public static void main(String[] args) {

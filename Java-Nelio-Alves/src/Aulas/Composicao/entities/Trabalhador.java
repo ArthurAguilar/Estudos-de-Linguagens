@@ -1,9 +1,9 @@
-package Aulas.EnumeracaoComposicao.entities;
+package Aulas.Composicao.entities;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Aulas.EnumeracaoComposicao.entities.enums.NivelTrabalhador;
+import Aulas.Composicao.entities.enums.NivelTrabalhador;
 
 public class Trabalhador {
 

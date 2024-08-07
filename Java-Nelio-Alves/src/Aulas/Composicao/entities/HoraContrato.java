@@ -1,4 +1,4 @@
-package Aulas.EnumeracaoComposicao.entities;
+package Aulas.Composicao.entities;
 
 import java.time.LocalDate;
 
