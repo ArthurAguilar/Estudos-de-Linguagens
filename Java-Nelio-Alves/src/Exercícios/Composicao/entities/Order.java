@@ -72,8 +72,5 @@ public class Order {
             sb.append(item.toString()).append("\n");
         }
         return sb.toString();
-    }
-
-    
-    
+    }    
 }
