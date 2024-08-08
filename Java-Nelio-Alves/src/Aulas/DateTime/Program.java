@@ -31,8 +31,8 @@ public class Program {
         LocalDateTime hr11 = LocalDateTime.of(2025, 01, 01, 12, 30);
 
 
-
-        //----------------##-------------------------##---------------------##-----------------------##---------------------##--------------//
+        //----------------##-------------------------##
+        
 
         System.out.println("LocalDate = "+ hr1);
         System.out.println("LocalDateTime = "+ hr2);
@@ -49,13 +49,6 @@ public class Program {
         System.out.println("LocalDateOf = " + hr10);
         System.out.println("LocalDateTimeOf = " + hr11);
 
-
-        //----------------##-------------------------##---------------------##-----------------------##---------------------##--------------//
-
-        
-
-
-        
         sc.close();
     }
 }

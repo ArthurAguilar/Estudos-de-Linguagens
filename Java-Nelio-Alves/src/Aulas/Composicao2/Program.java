@@ -30,6 +30,5 @@ public class Program {
         System.out.println(post1);
         System.out.println();
         System.out.println(post2);
-
     }
 }
