@@ -11,6 +11,7 @@ public class testingForEach {
         nums.add(2);
         nums.add(3);
         nums.add(4);
+        nums.add(5);
 
         nums.forEach(num -> {
             System.out.println(num);
