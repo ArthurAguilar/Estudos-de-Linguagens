@@ -19,7 +19,7 @@ public class Program {
         // DOWNCASTING
 
         BusinessAccount bacc1 = (BusinessAccount) acc2;
-        SavingAccounts sacc = new SavingAccounts(14, "Sofhia", 12000, .5);
+        // SavingAccounts sacc = new SavingAccounts(14, "Sofhia", 12000, .5);
 
         if (acc instanceof Account) {
             System.out.println("É uma instância de Account!");
