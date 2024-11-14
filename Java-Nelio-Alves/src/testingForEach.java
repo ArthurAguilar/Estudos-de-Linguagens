@@ -21,5 +21,6 @@ public class testingForEach {
             int numero = nums.get(i);
             System.out.println("Índice: " + i + ", Valor: " + numero);
         }
+        
     }
 }
