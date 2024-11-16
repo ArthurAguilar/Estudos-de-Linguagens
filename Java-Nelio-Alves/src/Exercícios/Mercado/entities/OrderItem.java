@@ -6,7 +6,13 @@ public class OrderItem {
 
     private Product product;
     
-    public OrderItem() {};
+    public OrderItem() {}
+
+    public OrderItem(Integer quantity, Double price, Product product) {
+        this.quantity = quantity;
+        this.price = price;
+        this.product = product;
+    }
 
     public OrderItem(Integer quantity, Double price) {
         this.quantity = quantity;
