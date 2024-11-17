@@ -1,6 +1,6 @@
 package Mercado.entities;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,26 +8,26 @@ import java.util.List;
 import Mercado.enums.OrderStatus;
 
 public class Order {
-    private LocalDate moment;
+    private LocalDateTime moment;
     private OrderStatus status;
 
     private Client client;
-    private OrderItem orderItem;
     private List<OrderItem> items = new ArrayList<>();
     DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
     
     public Order() {}
 
-    public Order(LocalDate moment, OrderStatus status) {
+    public Order(LocalDateTime moment, OrderStatus status, Client client) {
         this.moment = moment;
         this.status = status;
+        this.client = client;
     }
 
-    public LocalDate getMoment() {
+    public LocalDateTime getMoment() {
         return moment;
     }
 
-    public void setMoment(LocalDate moment) {
+    public void setMoment(LocalDateTime moment) {
         this.moment = moment;
     }
 
@@ -50,7 +50,7 @@ public class Order {
     public Double total() {
         double sum = 0;
         for (OrderItem orderItem : items) {
-            sum =+ orderItem.subTotal();
+            sum += orderItem.subTotal();
         }
         return sum;
     }
@@ -58,17 +58,19 @@ public class Order {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("Resumo do Pedido:%nData e Hora: %s%n%Status: %s%n%s%n%s%n",
-                                        moment.format(fmt),
-                                        status,
-                                        client,
-                                        orderItem
-                                        ));
-        
-        return sb.toString();
-    }
-    
-    
+        sb.append(String.format("Resumo do Pedido:%nData e Hora: %s%nStatus: %s%nCliente%s%n",
+                                                            moment.format(fmt),
+                                                            status,
+                                                            client));
 
-    
+        sb.append(String.format("%nItems Pedidos: "));
+        
+        for (OrderItem item : items) {
+        sb.append(item.toString()); 
+        }
+
+        sb.append(String.format("%nTotal da compra: R$%.2f", total()));
+
+    return sb.toString();
+    }
 }

@@ -50,8 +50,8 @@ public class OrderItem {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("Items pedidos:%nProduto: %s%nPreço: %.2f%nQuantidade: %d%nTotal: %.2f",
-                                            product,
+        sb.append(String.format("%nProduto: %s%nPreço: %.2f%nQuantidade: %d%nTotal: %.2f%n",
+                                            product.getName(),
                                             price,
                                             quantity,
                                             subTotal()));

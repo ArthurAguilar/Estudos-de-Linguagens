@@ -45,7 +45,7 @@ public class Client {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("Dados do Cliente:%nNome: %s%nEmail: %s%nData de Nascimento: %s", 
+        sb.append(String.format("%nNome: %s%nEmail: %s%nData de Nascimento: %s", 
                                 name,
                                 email,
                                 birthDate.format(fmt)));
