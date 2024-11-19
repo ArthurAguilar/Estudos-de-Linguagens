@@ -1,12 +1,13 @@
-package Aulas.Herança.entities;
+package Aulas.Sobreposicao.entities;
 
 public class Account {
-    
+
     private Integer number;
     private String holder;
     protected double balance;
 
-    public Account(){}
+    public Account() {
+    }
 
     public Account(Integer number, String holder, double balance) {
         this.number = number;
@@ -34,11 +35,21 @@ public class Account {
         return balance;
     }
 
-    public void withdraw (double amount) {
-        balance -= amount;
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
-    public void deposit (double amount) {
+    public void withdraw(double amount) {
+        balance -= amount + 5;
+    }
+
+    public void deposit(double amount) {
         balance += amount;
     }
+
+    @Override
+    public String toString() {
+        return "Account [number=" + number + ", holder=" + holder + ", balance=" + balance + " ]";
+    }
+
 }

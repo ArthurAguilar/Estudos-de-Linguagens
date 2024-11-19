@@ -1,6 +1,6 @@
-package Aulas.UpDowncasting.entities;
+package Aulas.Sobreposicao.entities;
 
-public class SavingAccounts extends Account {
+public final class SavingAccounts extends Account {
 
     private Double interestRate;
 
@@ -22,6 +22,11 @@ public class SavingAccounts extends Account {
     }
 
     public void updateBalance() {
-        balance =+ balance * interestRate;
+        balance += balance * interestRate;
+    }
+
+    @Override
+    public void withdraw(double amount) {
+        balance -= amount;
     }
 }

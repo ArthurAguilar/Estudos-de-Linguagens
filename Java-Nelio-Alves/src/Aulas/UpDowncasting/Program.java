@@ -14,12 +14,17 @@ public class Program {
 
         Account acc1 = bacc;
         Account acc2 = new BusinessAccount(12, "Renner", 4000, 10000);
-        Account acc3 = new SavingAccounts(13, "Gaby", 6000, .5);
+        // Account acc3 = new SavingAccounts(13, "Gaby", 6000, .5);
+
+        System.out.println("1º " + acc1);
+        System.out.println("2º " + acc2);
 
         // DOWNCASTING
 
         BusinessAccount bacc1 = (BusinessAccount) acc2;
         // SavingAccounts sacc = new SavingAccounts(14, "Sofhia", 12000, .5);
+
+        System.out.println("3º " + bacc1);
 
         if (acc instanceof Account) {
             System.out.println("É uma instância de Account!");
