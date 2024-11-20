@@ -48,7 +48,7 @@ public class Program {
                         }
 
                     } else {
-                        System.out.print("Deu ruim, tente novamente! ");
+                        System.out.print("Deu ruim, tente novamente! É terceirizado? (S/N): ");
                     }
                 }
             }
