@@ -22,10 +22,6 @@ public class testingForEach {
             System.out.println("Índice: " + i + ", Valor: " + numero);
         }
 
-        System.out.println("Digite um número: ");
-
-
-
-        
+        System.out.println("Digite um número: "); 
     }
 }
